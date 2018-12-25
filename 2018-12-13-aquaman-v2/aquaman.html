@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>aquaman-v2</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Microsoft JhengHei";
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .All {
+            height: 3000px;
+        }
+
+        .block01 {
+            background-image: url(https://cdn-images-1.medium.com/max/1600/1*UBxSBzeXfav7S8-jvYe3rw.gif);
+            width: 100%;
+            height: 550px;
+            background-size: cover;
+            background-position: 0 -105px;
+            background-attachment: fixed;
+        }
+
+        /* #mask01{
+            background-color: rgba(87, 87, 87, 0.5);
+            height: 510px;
+            width: 100%;
+        } */
+
+
+        .container {
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        nav {
+            box-shadow: 0 1px 3px 0 rgba(255, 255, 255, 0.25);
+            height: 70px;
+            background-color: #157375;
+            position: sticky;
+            top: 0;
+            background-image: url(11.jpg);
+            background-size: cover;
+            background-position: 0 0px;
+            text-shadow: 0 0 3px black;
+            z-index: 99;
+        }
+
+        .allbackground {
+            background-image: url(https://www.aquamanmovie.com/assets/images/common/bg-scroll.jpg);
+            background-size: cover;
+            height: 5800px;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        #box {
+            float: left;
+            font-weight: bold;
+            font-size: 24px;
+            letter-spacing: .02em;
+            margin-left: 50px;
+            margin-top: 20px;
+            color: #dccea1;
+        }
+
+        #box:hover {
+            border-bottom: 2px solid #dccea1;
+        }
+
+        .word {
+            margin-left: 250px;
+        }
+
+        #block02 {
+            width: 100%;
+            height: 1200px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 24px;
+            letter-spacing: .08em;
+            color: #dccea1;
+            line-height: 36px;
+        }
+
+        #block02 p {
+            font-size: 16px;
+        }
+
+        /* .long-box {
+            width: 100%;
+            height: 70px;
+            background-color: #157375;
+            background-image: url(11.jpg);
+            background-size: cover;
+            background-position: 0 0;
+        } */
+
+        #block03 {
+            width: 100%;
+            height: 480px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 48px;
+            letter-spacing: .08em;
+            color: #dccea1;
+            line-height: 36px;
+            margin-top: 70px;
+        }
+
+        .directorimg {
+            width: 40%;
+            height: 325px;
+            background-image: url(10.jpg);
+            background-size: cover;
+            background-position: -65px 0;
+            float: left;
+            margin-top: 50px;
+        }
+
+        .directorword {
+            width: 60%;
+            height: 325px;
+            font-size: 18px;
+            margin-top: 30px;
+            float: left;
+        }
+
+        #box01 {
+            width: 31.3%;
+            height: 325px;
+            float: left;
+            margin-left: 20px;
+        }
+
+        #box01img {
+            width: 100%;
+            height: 325px;
+            background-image: url(17.jpg);
+            background-size: cover;
+            background-position: 0 0;
+
+            margin-top: 50px;
+
+        }
+
+        #box01word {
+
+            clear: left;
+            text-align: center;
+
+        }
+
+        #block04 {
+            width: 100%;
+            height: 850px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 48px;
+            letter-spacing: .08em;
+            color: #dccea1;
+            line-height: 36px;
+            margin-top: 50px;
+        }
+
+        #box01word p {
+            font-size: 18px;
+            text-align: center;
+        }
+
+        h6 {
+            margin: 20px;
+            color: aliceblue;
+        }
+
+        #box02img {
+            width: 100%;
+            height: 325px;
+            background-image: url(15.png);
+            background-size: cover;
+            background-position: 0 0;
+            margin-top: 50px;
+        }
+
+        #box03img {
+            width: 100%;
+            height: 325px;
+            background-image: url(14.jpg);
+            background-size: cover;
+            background-position: 0 0;
+            margin-top: 50px;
+        }
+
+        #block05 {
+            width: 100%;
+            height: 600px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 24px;
+            letter-spacing: .08em;
+            color: #dccea1;
+            line-height: 36px;
+
+        }
+
+        #bigimg {
+            width: 100%;
+            height: 600px;
+            background-image: url(24.jpg);
+            background-size: cover;
+            background-position: -100px 0;
+            margin-top: 50px;
+            position: relative;
+            background-attachment: fixed;
+        }
+
+        #mask02 {
+            background-color: rgba(87, 87, 87, 0.5);
+            height: 600px;
+            width: 100%;
+
+        }
+
+        #bigimg p {
+            font-size: 24px;
+            margin-top: -60px;
+        }
+
+        #word001 {
+            width: 500px;
+            text-align: center;
+            color: aliceblue;
+            float: left;
+            margin-left: 200px;
+        }
+
+        #word002 {
+            width: 500px;
+
+            text-align: center;
+            color: aliceblue;
+            float: left;
+            clear: left;
+            margin-left: 500px;
+            padding-top: 90px;
+        }
+
+        #word003 {
+            width: 500px;
+            margin-left: 100px;
+            text-align: center;
+            color: aliceblue;
+            float: left;
+            padding-top: -20px;
+        }
+
+        h3 {
+            font-size: 36px;
+            text-align: center;
+            color: aliceblue;
+            padding-top: 48px;
+        }
+
+        footer {
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+            background-color: #157375;
+            background-image: url(11.jpg);
+            background-size: cover;
+            background-position: 0 0px;
+            color: white;
+            text-shadow: 0 0 3px black;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        #block06 {
+            background-image: url(https://cdn-images-1.medium.com/max/1600/1*-92uwyo7l5_de_Ywo2VPpw.gif);
+            background-size: cover;
+            background-position: 0 -40px;
+            width: 100%;
+            height: 575px;
+            background-attachment: fixed;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe,
+        .video-container object,
+        .video-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        #block07 {
+            background-image: url(19.jpg);
+            background-size: cover;
+            background-position: 0 0px;
+            width: 100%;
+            height: 720px;
+            background-attachment: fixed;
+        }
+
+        #block08 {
+            background-image: url(https://cdn-images-1.medium.com/max/1600/1*9CRbpx4N40yQzyaSJnhYnw.gif);
+            background-size: cover;
+            background-position: 0 0px;
+            width: 100%;
+            height: 400px;
+            background-attachment: fixed;
+        }
+
+        #block09 {
+            width: 100%;
+            height: 700px;
+        }
+
+        #m-img01 {
+            width: 30%;
+            height: 260px;
+            background-image: url(06.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-left: 30px;
+            margin-top: 100px;
+            float: left;
+        }
+
+        #m-img02 {
+            width: 30%;
+            height: 260px;
+            background-image: url(21.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-left: 30px;
+            margin-top: 100px;
+            float: left;
+        }
+
+        /* #m-m-img02:hover {
+            animation-name: rotate;
+            animation-duration: 2s;
+            animation-iteration-count: 3;
+        }
+
+        @keyframes rotate {
+            from{transform:rotate(0);}
+            to{transform: rotate(360 deg);}
+        } */
+
+        #m-img03 {
+            width: 30%;
+            height: 260px;
+            background-image: url(25.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-left: 30px;
+            margin-top: 100px;
+            float: left;
+        }
+
+        #m-img04 {
+            width: 30%;
+            height: 260px;
+            background-image: url(27.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-left: 30px;
+            margin-top: 20px;
+            float: left;
+            clear: left;
+        }
+
+        #m-img05 {
+            width: 30%;
+            height: 260px;
+            background-image: url(28.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-left: 30px;
+            margin-top: 20px;
+            float: left;
+        }
+
+        #m-img06 {
+            width: 30%;
+            height: 260px;
+            background-image: url(29.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-left: 30px;
+            margin-top: 20px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="All">
+        <!-- <div class="long-box"></div> -->
+        <div class="block01">
+            <div id="mask01"></div>
+        </div>
+        <div class="allbackground">
+
+            <nav>
+                <div class="container">
+                    <div class="word">
+                        <a href="#block02">
+                            <div id="box">劇情大綱</div>
+                        </a>
+                        <a href="#block03">
+                            <div id="box">導演</div>
+                        </a>
+                        <a href="#block04">
+                            <div id="box">角色介紹</div>
+                        </a>
+                        <a href="#block05">
+                            <div id="box">發行</div>
+                        </a>
+                        <a href="#block09">
+                            <div id="box">精彩劇照</div>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <div id="block06"></div>
+            <div class="container">
+                <div id="block02">
+                    <h1>劇情大綱</h1>
+                    <p> 亞瑟庫瑞(傑森摩莫亞 飾)是人類與亞特蘭提斯人混血的後裔，<br>
+                        他的母親亞特蘭提斯女王(妮可基嫚飾)深信他將來一定能為海平面上下帶來和平與共榮。<br>
+                        在大臣武爾科的幫助與教育下，亞瑟逐漸成為深海的守護者，<br>
+                        暗中保護著人類與海底的亞特蘭提斯人民，戮力讓雙方不起衝突，<br>他卻不知道生命中有更深一層的使命在等待著他。<br>
+                        另一方面，與亞瑟同母異父的弟弟：歐姆國王(派屈克威爾森飾)一心想要征服陸地上的人類，<br>蓄意挑起海底人對地表人類的仇恨，藉以集合所有的力量揮軍攻向人類。<br>
+                        為了阻止這場災難，亞瑟必須在梅拉(安柏赫德飾演)的幫助下短時間內找到傳說中的三叉戟，<br>以超越七海國王之姿，成為維護世界和平的英雄，<br>
+                        只是這趟尋找三叉戟的旅程將會比他想像中還要兇險許多…。
+                    </p>
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/4VrcUVzvRwM" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div id="block07"></div>
+            <div class="container">
+                <div id="block03">
+                    <div class="director">導演</div>
+                    <div class="directorimg"></div>
+                    <div class="directorword">
+                        <p>溫子仁（英語：JamesWan，1977年2月26日）<br>是一名澳大利亞男導演、製片人和編劇，<br>是生於馬來西亞砂拉越州古晉市的馬來西亞裔澳洲人，
+                            <br>時常製作恐怖電影。<br>著名作品包括《奪魂鋸》（2004年）、<br>《歡迎光臨死亡小鎮》（2007年）、<br>《陰兒房》系列電影（2011年至今）、<br>《厲陰宅》系列電影（2013年至今）<br>及《玩命關頭7》（2015年）等。</p>
+                    </div>
+                </div>
+                <div id="block08"></div>
+                <div id="block04">
+                    <div class="actor">角色介紹</div>
+                    <div id="box01">
+                        <div id="box01img"></div>
+                        <div id="box01word">
+                            <h6>水行俠 <br>Aquaman</h6>
+                            <p>
+                                亞瑟·庫瑞Arthur Curry<br>亞特蘭提斯王座的繼承人，<br>擁有駕馭潮汐和與各種水中生物交流的能力，亦能在深海中潛水及高速游泳。本身有著半人類的血統，<br>且不願意繼承其王位，<br>但時常在陸地及海中行俠仗義。
+                            </p>
+                        </div>
+                    </div>
+                    <div id="box01">
+                        <div id="box02img"></div>
+                        <div id="box01word">
+                            <h6>梅拉 <br>Mera</h6>
+                            <p>澤貝爾公主，<br>也是亞瑟的愛人，<br>擁有心靈感應和操縱水的能力。</p>
+
+                        </div>
+                    </div>
+                    <div id="box01">
+                        <div id="box03img"></div>
+                        <div id="box01word">
+                            <h6>亞特蘭娜女王 Queen Atlanna</h6>
+                            <p>亞特蘭提斯的前任女王，<br>亞瑟的母親。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="block05">
+                <h1>發行<h1>
+                        <div id="bigimg">
+                            <div id="mask02">
+                                <h3>上映日期</h3>
+                                <div id="word001">
+                                    <p>
+                                        <br>2018年11月26日（萊斯特廣場）
+                                        <br>2018年12月7日（中國大陸）
+                                        <br>2018年12月12日（臺灣）
+                                    </p>
+                                </div>
+                                <div id="word003">
+                                    <p>
+                                        <br>2018年12月13日（新加坡）
+                                        <br>2018年12月20日（香港）
+                                        <br>2018年12月21日（美國）
+                                    </p>
+                                </div>
+                                <div id="word002">
+                                    <p>
+                                        評價:<br>水行俠整體獲得了正面居多的評價。
+                                        <br>爛番茄根據106篇評論，<br>該片持有70%的新鮮度，<br>平均評分6.2 /10；
+                                        <br>「以其令人愉快的滑稽趨勢提供了 <br>CGI超級英雄奇觀、 <br>充滿活力的動作，及老套樂趣的強調。」
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+            <div id="block09">
+                <div class="clearfix"></div>
+                <!-- <h1>精彩劇照</h1> -->
+                <div id="m-img01"></div>
+                <div id="m-img02"></div>
+                <div id="m-img03"></div>
+                <div id="m-img04"></div>
+                <div id="m-img05"></div>
+                <div id="m-img06"></div>
+            </div>
+
+            <div class="clearfix;"></div>
+        </div>
+        <footer>
+            <p>COPYRIGHT © 2018 本網站僅用於教學使用，如有侵權請來信告知。</p>
+        </footer>
+    </div>
+
+    </div>
+
+</body>
+
+</html>

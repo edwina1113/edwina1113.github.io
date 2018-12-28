@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <style>
+        body{
+            margin: 0;
+            padding-top: 50px;
+            height: 2000px;
+            background-image: url("what-the-hex.png");
+        }
+
+        .navbar{
+           box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.25);
+           height: 50px;
+           position: fixed;
+           top: 0;
+           left: 0;
+           width: 100%;
+           z-index: 99;
+           background-color: white;        
+        }
+
+        .fa-twitter {
+            color: cadetblue;
+            font-size: 24px;
+            margin-left: 5px;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+        
+        .divleft {
+           float: left;
+           display: block;
+        }
+        .divright {
+           float: right;
+           display: block;
+        }
+
+        .divright2 {
+            float: right;
+            display: block;
+            width: 80px;
+            height: 20px;
+            border: 2px solid rgb(139, 184, 243);
+            border-radius: 20px;
+            position: absolute;
+            right: 0;
+            top: 13px;
+        }
+        .container {
+            margin: 0 auto;
+            max-width: 1140px;
+            position: relative;
+        }
+        .navbar-link{
+            line-height: 50px;
+            margin: 0 15px;
+            font-size: 13px;
+            font-weight: 700;
+            color: rgb(139, 184, 243);
+            text-decoration: none;
+        }
+        .search-box{
+            border-radius: 10px;
+            padding-left: 15px;
+        }
+        .search-box:focus{
+            border: 2px solid rgb(139, 184, 243);
+            border-radius: 10px;
+            transition: 0.3s;
+            outline: none;
+        }
+
+        .navbar2{
+           box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.25);
+           height: 50px;
+           background-color:white;
+           position: sticky;
+           top: 70px;
+        }
+        .container2{
+            margin: 0 auto;
+            max-width: 1140px;
+            position: relative;
+        }
+        .img-box{
+            width: 150px;
+            height: 150px;
+            background-color: blue;
+            overflow: hidden;
+            border: 5px solid white;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: -50px;
+            background-image: url("waterman.jpg");
+            background-size: cover;
+            background-position:-35px 0;
+            
+        }
+        .span2{
+            margin: 22px;
+        }
+        .navbar-link2{
+            padding:22px; 
+            text-decoration: none;
+            color: rgb(139, 184, 243);
+        }
+        .navbar-link3{
+            color: rgb(139, 184, 243);
+            text-decoration: none;
+           
+            margin: 0 15px;  
+        }
+        .span01{
+            font-weight: bold;
+            font-size: 12px;
+            letter-spacing: .02em;
+         
+        }
+        .span02{
+            font-size: 18px;
+            font-weight: bold;
+        } 
+        .divcenter{
+            width: 100%;
+            position: absolute;
+            left: 230px;
+            top:5px;
+        }
+        .img{
+            height: 500px;
+            width: 100%;
+            background-image: url("w02.jpg");
+            background-size: cover;
+            background-position:0  -7px;
+            position: sticky;
+            top: -415px; 
+            /* background-attachment: fixed; */
+        }
+        /* .img02{
+            height: 500px;
+            width: 100%;
+            background-image: url("w03.jpg");
+            background-size: cover;
+            background-position:0  0;
+            background-attachment: fixed;
+        }
+        .img03{
+            height: 500px;
+            width: 100%;
+            background-image: url("04.jpg");
+            background-size: cover;
+            background-position:0  0;
+            background-attachment: fixed;
+        }
+        .img04{
+            height: 500px;
+            width: 100%;
+            background-image: url("w05.png");
+            background-size: cover;
+            background-position:0  0;
+            background-attachment: fixed;
+        } */
+        
+        
+        
+        .log{
+            font-weight: 300;
+        }
+        .box{
+            width: 70px;
+            margin-left: 20px;
+            float: left;
+        }
+        .box:hover{
+            border-bottom: 2px solid  rgb(139, 184, 243);
+        }
+        a{
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="divleft">
+                <a class="navbar-link" href="#">
+                    <i class="fab fa-twitter fa-2x"></i>
+                    <span class="home">首頁</span>
+                </a>
+                <a class="navbar-link" href="#"> <span class="about">關於</span></a>
+            </div>
+            <div class="divright">
+                <input class="search-box" type="text" placeholder="搜尋">
+                <a class="navbar-link" href="#"> <span class="log">已經擁有帳戶?<b>登入</b></span></a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </nav>
+
+    <div class="img"></div>
+   
+
+    <nav class="navbar2">
+        <div class="container2">
+            <div class="divleft">
+                <div class="img-box"> </div>
+            </div>
+
+            <div class="divcenter">
+                <a class="navbar-link3" href="#">
+                    <div class="box"><span class="span01">推文</span> <br> <span class="span02">3.18萬</span> </div>
+                </a>
+                <a class="navbar-link3" href="#">
+                    <div class="box"><span class="span01">正在跟隨</span> <br> <span class="span02">193</span> </div>
+                </a>
+                <a class="navbar-link3" href="#">
+                    <div class="box"><span class="span01">追蹤者</span> <br> <span class="span02">1.7萬</span> </div>
+                </a>
+                <a class="navbar-link3" href="#">
+                    <div class="box"><span class="span01">喜歡的內容</span> <br> <span class="span02">4.74萬</span> </div>
+                </a>
+                <a class="navbar-link3" href="#">
+                    <div class="box"><span class="span01">列表</span> <br> <span class="span02">1</span> </div>
+                </a>
+                <a class="navbar-link3" href="#">
+                    <div class="box"><span class="span01">新聞</span> <br> <span class="span02">1</span> </div>
+                </a>
+            </div>
+
+            <div class="divright2">
+                <a class="navbar-link2" href="#"> <span>跟隨</span></a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </nav>
+
+    <!-- <div class="img02"></div>
+    <div class="img03"></div>
+    <div class="img04"></div> -->
+
+</body>
+
+</html>

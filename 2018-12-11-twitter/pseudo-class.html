@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .title{
+        color: aqua;
+    }
+    .title:hover{
+        color: burlywood;
+    }
+    a:active{
+        color: blue;
+    }
+    a:visited{
+        color: crimson;
+    }
+    .box{
+        width: 200px;
+        height: 200px;
+        background-color: black; 
+        transition: 0.3s;
+        transform: rotate(90deg);
+    }
+    .box:hover{
+        transition: 1s;
+        background-color: brown;
+        transform: rotate(360deg);
+    }
+    </style>
+</head>
+<body>
+    <h1 class="title">title</h1>
+    <a href="#">Link</a>
+    <div class="box"></div>
+</body>
+</html>

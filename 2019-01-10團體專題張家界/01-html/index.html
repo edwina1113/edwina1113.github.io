@@ -8,7 +8,7 @@
     <title>Document</title>
 
     <!-- 這裡是字體 -->
-    <link rel="stylesheet" href="/01-html/font.css">
+    <link rel="stylesheet" href="/02-css/font.css">
     <!-- 這裡是bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
         crossorigin="anonymous">
@@ -22,14 +22,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.css">
     <!-- 這裡是Aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- 這裡是w3cshool -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
     <!-- 這裡是css animate -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
     <!-- 這裡是我的css -->
     <link rel="stylesheet" href="../02-css/style.css">
 
     <style>
         span{
-            font-family: "wt024";
+                font-family: "wt024";
             }
         .swiper-container {
              width: 100%;
@@ -61,9 +63,10 @@
     <!-- 這裡是片頭的影片 -->
     <!-- The video -->
     <div id="myVideo"> <video autoplay muted loop width="100%">
-            <source src="../03-img/ink_movie.mp4" type="video/mp4">
+            <source src="/03-img/ink_movie.mp4" type="video/mp4">
         </video>
     </div>
+
 
     <!-- Swiper -->
     <div class="swiper-container">
@@ -76,7 +79,7 @@
 
         <div class="swiper-wrapper">
 
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-swiper-autoplay="6500">
                 <img src="../03-img/banner01.jpg" alt="">
             </div>
             <div class="swiper-slide">
@@ -100,6 +103,8 @@
         <div class="swiper-button-prev"></div>
     </div>
 
+
+    <!-- nav -->
     <nav class="navbar sticky-top  navbar-expand-lg navbar-light ">
         <div class="container">
             <a class="navbar-brand mr-auto" href="#"><img src="../03-img/logolion.png" alt=""></a>
@@ -137,7 +142,7 @@
             <div class="title">
                 <span>天門山</span>
                 <br>
-                <div class="textBG"  data-aos="fade-up-right">
+                <div class="textBG" data-aos="fade-up-right">
                     <span class="part01">天門山距張家界市區南側約 8公里,歷史文化奠定
                         深厚的天門山，一直被當地人民奉為神山、聖山，更被譽為「湘西第一神山」和「武陵之魂」。
                     </span>
@@ -154,6 +159,21 @@
                 <div class="cardTitle">
                     <span> 鬼谷棧道</span>
                 </div>
+
+                <!-- The Modal -->
+                <!-- <div id="myModal" class="modal"> -->
+
+                    <!-- The Close Button -->
+                    <!-- <span class="close">&times;</span> -->
+
+                    <!-- Modal Content (The Image) -->
+                    <!-- <img class="modal-content" id="img01"> -->
+                    <!-- <div id="img01">
+                        <img class="modal-content"  src="../03-img/D1-2.jpg">  
+                    </div> -->
+                    <!-- Modal Caption (Image Text) -->
+                    <!-- <div id="caption"></div>
+                </div> -->
             </div>
             <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2500" class="Centercard02">
                 <div class="cardImg"></div>
@@ -661,8 +681,15 @@
                                         <div class="card_Hover">
                                             <h5>鳳凰古城</h5>
                                             <span>
-                                                鳳凰古城始建於清康熙四十三年（1704年），歷經300多年古貌猶存。現東門和北門古城樓尚在。城內青石板街道，江邊木結構吊腳樓，以及朝陽宮、古城博物館、楊家祠堂、沈從文故居、熊希齡故居、天王廟、大成殿、萬壽宮等建築，無不具有古城特色。鳳凰古城以迴龍閣古街為中軸，連接無數的石板小巷，貫穿全城。鳳凰古城的標誌性建築之一「虹橋」，原名臥虹橋，歷史悠久。
-
+                                                鳳凰古城始建於清康熙四十三年（1704年），<br>
+                                                歷經300多年古貌猶存。<br>
+                                                現東門和北門古城樓尚在。<br>
+                                                城內青石板街道，<br>
+                                                江邊木結構吊腳樓，<br>
+                                                以及朝陽宮、古城博物館、楊家祠堂、<br>
+                                                沈從文故居、熊希齡故居、天王廟、<br>
+                                                大成殿、萬壽宮等建築，<br>
+                                                無不具有古城特色。<br>
                                             </span>
                                         </div>
                                     </div>
@@ -670,7 +697,13 @@
                                         <div class="card_Hover">
                                             <h5>石板街</h5>
                                             <span>
-                                                長條青石板鋪滿大街小巷的老街，古色古香，韻味十足。七拐八歪的街巷四通八達，如同迷宮。店鋪林立的商街分布著古城博物館、楊家祠堂、沈從文故居、熊希齡故居、古城牆等明清古建。
+                                                長條青石板鋪滿大街小巷的老街，<br>
+                                                古色古香，韻味十足。<br>
+                                                七拐八歪的街巷四通八達，<br>
+                                                如同迷宮。<br>
+                                                店鋪林立的商街分布著古城博物館、<br>
+                                                楊家祠堂、沈從文故居、<br>
+                                                熊希齡故居、古城牆等明清古建。
 
                                             </span>
                                         </div>
@@ -679,7 +712,10 @@
                                         <div class="card_Hover">
                                             <h5>虹橋</h5>
                                             <span>
-                                                虹橋横卧於沱江之上，風雨樓以它的壯觀和俊美拔然而起，成了一道重疊的風景，由下而上、由古而今穿越着六百多年的歷史。
+                                                虹橋横卧於沱江之上，<br>
+                                                風雨樓以它的壯觀和俊美拔然而起，<br>
+                                                成了一道重疊的風景，<br>
+                                                由下而上、由古而今穿越着六百多年的歷史。
                                             </span>
                                         </div>
                                     </div>
@@ -698,7 +734,6 @@
                                                 一頭綰鐵釘，陷石罅中漸移，遇上下亦如之」，<br>
                                                 「間或偶遇飛虎剪繩，則立成齏粉」，<br>
                                                 故石耳極是珍貴。張家界市各景區均有售。
-
                                             </span>
                                         </div>
 
@@ -812,8 +847,6 @@
                                                 西畫手法、溶版畫，<br>雕刻及藝術盆景之精髓為一體。<br>
                                                 古樸典雅，色彩自然，<br>
                                                 具有強烈的立體感和浮雕藝術效果，<br>其圖面無不流溢著濃郁的<br>自在神韻和湘西民族風情。
-
-
                                             </span>
                                         </div>
                                     </div>
@@ -828,8 +861,6 @@
                                                 道線路斜長7455米，<br>
                                                 上、下站水平高差1279米，<br>
                                                 是世界最長的單線循環脫掛抱索器車廂式索道。
-
-
                                             </span>
                                         </div>
                                     </div>
@@ -844,7 +875,6 @@
                                                 加上典型的喀斯特地貌，<br>
                                                 所以，在這條棧道上更能找到一種<br>
                                                 在乘坐直升飛機飛越熱帶雨林大峽谷的感覺。<br>
-
                                             </span>
                                         </div>
                                     </div>
@@ -858,8 +888,6 @@
                                                 土家炒米是糯米所製，<br>
                                                 香氣濃郁，工藝奇特，增進食慾功效，<br>
                                                 是土家人過年必不可少的年貨。
-
-
                                             </span>
                                         </div>
 
@@ -891,7 +919,6 @@
                                                 表面黃綠色或黃褐色，<br>
                                                 微有光澤。質脆，搓之易碎，<br>
                                                 折斷面有少量銀白色橡膠絲相連，味微苦。
-
                                             </span>
                                         </div>
 
@@ -974,7 +1001,8 @@
                                             <h5>袁家界景區</h5>
                                             <span>
                                                 翠谷之中，石峰成百上千，<br>
-                                                高入雲、矮臥地，如獅如虎，大起大落，相映生輝。<br>
+                                                高入雲、矮臥地，如獅如虎，<br>
+                                                大起大落，相映生輝。<br>
                                                 「迷魂台」清晨和天氣變換時雲霧翻滾，<br>
                                                 群山時隱時現，變幻莫測，使人難辨天上人間。
                                             </span>
@@ -1027,29 +1055,23 @@
                                     </div>
                                     <div class="cardImg02">
                                         <div class="card_Hover">
-                                            <h5>張家界核桃
-                                            </h5>
+                                            <h5>張家界核桃</h5>
                                             <span>
                                                 含油率達63-80％，果肉營養價值高，<br>
                                                 本境青安坪的米核桃，殼薄，<br>
                                                 手捏即碎，醇香味美，可謂核桃之王。
-
-
                                             </span>
                                         </div>
 
                                     </div>
                                     <div class="cardImg03">
                                         <div class="card_Hover">
-                                            <h5>武陵源蜜桔
-                                            </h5>
+                                            <h5>武陵源蜜桔</h5>
                                             <span>
                                                 盛產於武陵源索溪兩岸和武陵源鄰近的<br>
                                                 九溪、江椏一帶，<br>
                                                 成熟季節在9-10份，<br>
                                                 大的重達400克，含糖適中，清甜爽口。
-
-
                                             </span>
                                         </div>
 
@@ -1064,7 +1086,6 @@
                                                 餐飲設施：<br>
                                                 茶台、酒吧、自助餐廳、特色中餐廳<br>
                                                 娛樂設施：<br>棋牌室、茶室
-
                                             </span>
                                         </div>
 
@@ -1075,12 +1096,10 @@
                                             <span>
                                                 餐飲設施：<br>
                                                 送餐服務、中式餐廳、西餐廳<br>
-
                                                 娛樂設施：<br>
                                                 室內游泳池、健身室、SPA、<br>
                                                 按摩室、桑拿浴室、足浴、<br>
                                                 乒乓球室、桌球室、棋牌室、茶室
-
                                             </span>
                                         </div>
                                     </div>
@@ -1092,9 +1111,7 @@
                                             <span>
                                                 餐飲設施：<br>
                                                 大廳酒吧、中式餐廳<br>
-
                                                 娛樂設施：<br>足浴、按摩室
-
                                             </span>
                                         </div>
                                     </div>
@@ -1174,7 +1191,6 @@
                                                 因有3條溪水，<br>
                                                 分別從西、北、南3穀口流出，<br>
                                                 然後相匯合流注入索溪，故稱水繞四門。
-
                                             </span>
                                         </div>
                                     </div>
@@ -1247,12 +1263,10 @@
                                             <span>
                                                 餐飲設施：<br>
                                                 送餐服務、中式餐廳、西餐廳<br>
-
                                                 娛樂設施：<br>
                                                 室內游泳池、健身室、SPA、<br>
                                                 按摩室、桑拿浴室、足浴、<br>
                                                 乒乓球室、桌球室、棋牌室、茶室
-
                                             </span>
                                         </div>
                                     </div>
@@ -1264,9 +1278,7 @@
                                             <span>
                                                 餐飲設施：<br>
                                                 大廳酒吧、中式餐廳<br>
-
                                                 娛樂設施：<br>足浴、按摩室
-
                                             </span>
                                         </div>
                                     </div>
@@ -1314,11 +1326,13 @@
                                             </h5>
                                             <span>
                                                 位於古城長沙湘江兩岸，<br>
-                                                由丘陵、低山、江、河、湖泊、自然動植物、<br>
+                                                由丘陵、低山、江、<br>
+                                                河、湖泊、自然動植物、<br>
                                                 近代名人墓葬及革命紀念遺址等組成，<br>
                                                 為城市山嶽型風景名勝區，<br>
                                                 因南北朝劉宋時《南嶽記》載有：<br>
-                                                「南嶽周圍八百里，回雁為首，嶽麓為足」而得名。
+                                                「南嶽周圍八百里，回雁為首，嶽麓為足」<br>
+                                                而得名。
                                             </span>
                                         </div>
                                     </div>
@@ -1329,12 +1343,14 @@
                                             <span>
                                                 湘繡為中國四大名繡之一，<br>
                                                 歷來以卓越技巧著名：<br>
-                                                運用70多種針法和100多種顔色的繡線，<br>
+                                                運用70多種針法和
+                                                100多種顔色的繡線，<br>
                                                 充分發揮針法表現力，<br>
                                                 精細入微地刻劃外形及神韻。<br>
-                                                繡品形象生動逼真，<br>
-                                                形神兼備，曾有「繡花花生香，<br>
-                                                繡鳥能聽聲，繡虎能奔跑，繡人能傳神的美譽」。
+                                                繡品形象生動逼真，
+                                                形神兼備，<br>曾有「繡花花生香，
+                                                繡鳥能聽聲，<br>
+                                                繡虎能奔跑，繡人能傳神的美譽」。
                                             </span>
                                         </div>
                                     </div>
@@ -1371,9 +1387,7 @@
                                     </div>
                                     <div class="cardImg02">
                                         <div class="card_Hover">
-                                            <h5>湘蓮
-
-                                            </h5>
+                                            <h5>湘蓮</h5>
                                             <span>
                                                 湖南省湘潭縣產的湘蓮，<br>
                                                 福建建寧縣產的建蓮，<br>
@@ -1388,8 +1402,7 @@
                                     </div>
                                     <div class="cardImg03">
                                         <div class="card_Hover">
-                                            <h5>樅菌
-                                            </h5>
+                                            <h5>樅菌</h5>
                                             <span>
                                                 樅菌為野生食用菌之王，<br>
                                                 其肉質肥厚，質細絲白，<br>
@@ -1409,7 +1422,6 @@
                                                 至尊如意中、西餐廳。<br>
                                                 娛樂設施：<br>
                                                 洗浴桑拿中心、棋牌麻將室<br>
-
                                             </span>
                                         </div>
 
@@ -1423,8 +1435,6 @@
                                                 娛樂設施：<br>
                                                 按摩服務、桑拿浴室、<br>
                                                 土耳其浴室、晚間娛樂節目<br>
-
-
                                             </span>
                                         </div>
                                     </div>
@@ -1822,14 +1832,15 @@
                 <div id="footer">
                     <div class="footer_LogoBox">
                         <div class="footer_Logo">
-                            <img src="../03-img/logolion.png" alt="">
+                            <a href="https://travel.liontravel.com/detail?NormGroupID=596f184e-7845-43cf-b0b5-1f029a0c5bb6&GroupID=19CZ223CIS-T&_ga=2.132654670.1366433016.1548052098-1802287949.1548052098"
+                                target="_black">立即報名</a>
                         </div>
                     </div>
 
                     <div class="footerlink">
                         <a href="https://www.liontravel.com/info/aboutlion/tw/company.asp" target="_black">關於雄獅</a>
                         <a href="https://www.liontravel.com/info/notice/orderinfo/ssl.asp" target="_black">交易安全</a>
-                        <a href="https://www.liontravel.com/info/notice/orderinfo/privacy.asp" target="_black">隱私權策略</a>
+                        <!-- <a href="https://www.liontravel.com/info/notice/orderinfo/privacy.asp" target="_black">隱私權策略</a> -->
                         <a href="https://www.liontravel.com/info/notice/orderinfo/process.asp" target="_black">訂購說明</a>
                         <a href="https://www.liontravel.com/member/?action=webvccs00" target="_black">聯絡雄獅</a>
                     </div>
@@ -1851,16 +1862,34 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.js"></script>
     <!-- Initialize Swiper -->
     <script>
+        // var swiper = new Swiper('.swiper-container', {
+        //     pagination: {
+        //         el: '.swiper-pagination',
+        //         type: 'progressbar',
+        //     },
+        //     navigation: {
+        //         nextEl: '.swiper-button-next',
+        //         prevEl: '.swiper-button-prev',
+        //     },
+        // });
+
         var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
             pagination: {
                 el: '.swiper-pagination',
-                type: 'progressbar',
+                clickable: true,
             },
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
         });
+
     </script>
     <!-- 這裡是aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -1884,7 +1913,6 @@
         //     mp4.classList.add("opa");
         // }
 
-
         // function test() {
         //     var video = document.querySelector("#myVideo");
 
@@ -1892,8 +1920,6 @@
         //     console.log(setTimeout);
 
         // }
-
-
 
         window.onload = function () {
             setTimeout("fadeout()", 4000)
@@ -1910,6 +1936,58 @@
 
     </script>
 
+
+    <!-- 
+    這裡是modalImg 
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img =  $('.cardImg');
+        var modalImg = $("#img01");
+        var captionText = document.getElementById("caption");
+        $('.cardImg').onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            modalImg.attr('src', newSrc);
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script> -->
+
+    <!-- <script>
+        var modal = document.getElementById("myModal");
+        var i;
+
+        var img = document.getElementsByClassName("cardImg");
+        console.log(img);
+        var modalImg = document.getElementById("img01");
+
+        for (i = 0; i < img.length; i++) {
+            img[i].onclick = function () {
+
+                modal.style.display = "block";
+                modalImg.src = this.src;
+
+            }
+        }
+
+        var span = document.getElementsByClassName("close")[0];
+
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+    </script> -->
 </body>
 
 </html>

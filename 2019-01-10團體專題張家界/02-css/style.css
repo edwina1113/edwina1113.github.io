@@ -1761,7 +1761,7 @@ h5{
     margin-left: 50px;
     font-size: 24px;
     color: white;
-    font-family: '微軟正黑體';
+    font-family: '微軟正黑體'!important;
 }
 
 hr{

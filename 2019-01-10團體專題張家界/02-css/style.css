@@ -6,6 +6,7 @@
 body{
     position: relative;
     margin: 0;
+   
 }
 .container{
     margin: auto;
@@ -31,6 +32,7 @@ nav{
 /* banner+section01----------------------------- */
 
 
+
 .opa{
     opacity:0;
     transition: 1s;
@@ -38,7 +40,7 @@ nav{
 
 #myVideo {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position: fixed;
     z-index: 9999; 
   }
@@ -205,6 +207,7 @@ nav{
     background-size: cover;
     position: relative;
     background-attachment: fixed;
+    overflow: hidden;
 }
 #section04 .title{
     font-size: 64px;

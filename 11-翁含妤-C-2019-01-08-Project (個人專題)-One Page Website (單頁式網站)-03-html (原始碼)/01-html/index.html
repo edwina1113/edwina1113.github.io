@@ -5,183 +5,1456 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>美加寶</title>
+
+    <!-- 這裡是swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.css">
+
+
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
     <link rel="stylesheet" href="/02-css/style.css">
-    <style>
+
+    <!-- <style>
         @import url(//fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+
         * {
             font-family: 'cwTeXFangSong', serif;
         }
-    </style>
+    </style> -->
+
+
 </head>
 
 <body>
     <div id="banner">
-       
-        <div class="section01">
-            <h1>遠紅外線負離子</h1>
-            <h1>sleep</h1>
+        <!-- <div class="section01">
         </div>
      
         <div class="section02">
-            <h1>遠紅外線負離子</h1>
-            <h1>office</h1>
-        </div>
-    
+        </div> -->
     </div>
+
+    <!-- <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+        </div>
+        Add Pagination 
+        <div class="swiper-pagination"></div>
+        Add Arrows 
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div> -->
+
     <div id="navsticky">
         <div class="container">
-            <div class="word">獨家技術</div>
-            <div class="word">產品介紹</div>
-            <div class="logo"><img src="" alt=""></div>
-            <div class="word">常見問題</div>
-            <div class="word">關於我們</div>
+            <div class="word01">
+                <a href="#block01">獨家技術</a> </div>
+            <div class="word01">
+                <a href="#block03">產品介紹</a> </div>
+            <div class="logo"><a href="#banner"><img src="/04-img/logo.png" alt=""></a></div>
+            <div class="word02">
+                <a href="#block05">常見問題</a></div>
+            <div class="word02">
+                <a href="#block07">關於我們</a> </div>
         </div>
     </div>
+
+
+    <nav id="navsticky_Phone" class="navbar  fixed-top navbar-expand-lg navbar-light bg-light">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">美加寶健康科技能量生活館</a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#phone_block01">獨家技術 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#block03">產品介紹</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">常見問題</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">聯絡我們</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+
     <div id="block01">
         <div class="container">
             <div class="title">
-                <div class="titleLeft">線</div>
+                <div class="titleLeft"><img src="/04-img/newline.png" alt=""></div>
+                <div class="titleLeft_phone"><img src="/04-img/phone_line01.png" alt=""></div>
                 <div class="titleRight">四項獨家技術</div>
+                <div class="clearfix"></div>
             </div>
-            <div class="block01Img"></div>
-            <div class="upperlayer">
-                <div class="subtitle">技術一</div>
-                <div class="slogan">改善失眠、快速消除疲勞、夜夜好眠。</div>
-                <div class="Smallslogan">遠紅外線床墊的釋放率高達91%</div>
-                <div class="detail">
-                    透過『碳纖維複合導電發熱布』
-                    <br>來產生遠紅外線物理共振溫熱效應，
-                    <br>促進細胞活化、新陳代謝順暢及加快血液循環...</div>
-                <div class="ViewMore">View More</div>
-            </div>
-            <div class="downlayer">
-                <div class="subtitle">技術二</div>
-                <div class="slogan">不只冬天，一年四季，天天睡得舒適自在。</div>
-                <div class="Smallslogan">與日本遠紅外線床墊同步，擺拖只能在冬天使用的傳統模式</div>
-                <div class="detail">
-                    在夏天裡，它更可以透過人體的體溫，
-                    <br>讓『奈米銀』釋放出特有的物理效應外，
-                    <br>更可以讓『奈米鍺』釋放出負離子 。</div>
-                <div class="ViewMore">View More</div>
+
+            <div id="pc-block01">
+                <ul class="nav nav-pills mb-3" id="pills-tab_block01" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pills-introduction01-tab" data-toggle="pill"
+                            href="#pills-introduction01" role="tab" aria-controls="pills-introduction01"
+                            aria-selected="true">技術一</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-introduction02-tab" data-toggle="pill"
+                            href="#pills-introduction02" role="tab" aria-controls="pills-introduction02"
+                            aria-selected="false">技術二</a>
+                    </li>
+
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-introduction01" role="tabpanel"
+                        aria-labelledby="pills-introduction01-tab">
+
+                        <div class="block01_introduction01">
+                            <!-- <div class="block01Img_01"></div> -->
+                            <!-- <div class="downlayer">
+                            <div class="subtitle">技術二</div>
+                            <div class="slogan">不只冬天，一年四季，天天睡得舒適自在。</div>
+                            <div class="Smallslogan">與日本遠紅外線床墊同步，擺拖只能在冬天使用的傳統模式</div>
+                            <div class="detail">
+                                在夏天裡，它更可以透過人體的體溫，
+                                <br>讓『奈米銀』釋放出特有的物理效應外，
+                                <br>更可以讓『奈米鍺』釋放出負離子 。</div>
+                            <div class="ViewMore">View More</div>
+                        </div>  -->
+                            <div class="clearfix"></div>
+                        </div>
+
+                        <div class="block01_introduction02">
+                            <div class="block01Img_02"></div>
+                            <div class="upperlayer">
+                                <div class="subtitle">技術一</div>
+                                <div class="slogan">改善失眠、快速消除疲勞、夜夜好眠。</div>
+                                <div class="Smallslogan">遠紅外線床墊的釋放率高達91%</div>
+                                <div class="detail">
+                                    透過『碳纖維複合導電發熱布』
+                                    <br>來產生遠紅外線物理共振溫熱效應，
+                                    <br>促進細胞活化、新陳代謝順暢及加快血液循環</div>
+                                <!-- <div class="ViewMore">View More</div> -->
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="tab-pane fade" id="pills-introduction02" role="tabpanel"
+                        aria-labelledby="pills-introduction02-tab">
+
+                        <div class="block01_introduction01">
+                            <div class="block01Img_01"></div>
+                            <div class="downlayer">
+                                <div class="subtitle">技術二</div>
+                                <div class="slogan">不只冬天，一年四季，天天睡得舒適自在。</div>
+                                <div class="Smallslogan">與日本遠紅外線床墊同步，擺拖只能在冬天使用的傳統模式</div>
+                                <div class="detail">
+                                    在夏天裡，它更可以透過人體的體溫，
+                                    <br>讓『奈米銀』釋放出特有的物理效應外，
+                                    <br>更可以讓『奈米鍺』釋放出負離子 。</div>
+                                <!-- <div class="ViewMore">View More</div> -->
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+
+
+
+                        <!-- <div class="block01_introduction02">
+                        <div class="block01Img_02"></div>
+                        <div class="upperlayer">
+                            <div class="subtitle">技術一</div>
+                            <div class="slogan">改善失眠、快速消除疲勞、夜夜好眠。</div>
+                            <div class="Smallslogan">遠紅外線床墊的釋放率高達91%</div>
+                            <div class="detail">
+                                透過『碳纖維複合導電發熱布』
+                                <br>來產生遠紅外線物理共振溫熱效應，
+                                <br>促進細胞活化、新陳代謝順暢及加快血液循環</div>
+                             <div class="ViewMore">View More</div>
+                        </div>
+                    </div>  -->
+
+                    </div>
+
+                </div>
+
+
+
+
+
+                <!-- <div class="btn_group01">
+                <button type="button" class="btn btn-info">技術一</button>
+                <button type="button" class="btn btn-info" onclick="test()">技術二</button>
+            </div> -->
+                <div class="clearfix"></div>
             </div>
         </div>
     </div>
+
+    <div id="phone_block01">
+        <div class="container">
+            <ul class="nav nav-pills justify-content-center" id="pills-tab_PhoneBlock01" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="pills-phone01-tab" data-toggle="pill" href="#pills-phone01"
+                        role="tab" aria-controls="pills-phone01" aria-selected="true">技術ㄧ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-phone02-tab" data-toggle="pill" href="#pills-phone02" role="tab"
+                        aria-controls="pills-phone02" aria-selected="false">技術二</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-phone03-tab" data-toggle="pill" href="#pills-phone03" role="tab"
+                        aria-controls="pills-phone03" aria-selected="false">技術三</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-phone04-tab" data-toggle="pill" href="#pills-phone04" role="tab"
+                        aria-controls="pills-phone04" aria-selected="false">技術四</a>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-phone01" role="tabpanel"
+                    aria-labelledby="pills-phone01-tab">
+
+                    <div class="phone_block01_introduction01">
+                        <div class="phone_block01Img_02"></div>
+                        <div class="upperlayer">
+                            <div class="subtitle">技術一</div>
+                            <div class="slogan">改善失眠、快速消除疲勞、夜夜好眠。</div>
+                            <div class="Smallslogan">遠紅外線床墊的釋放率高達91%</div>
+                            <div class="detail">
+                                透過『碳纖維複合導電發熱布』
+                                <br>來產生遠紅外線物理共振溫熱效應，
+                                <br>促進細胞活化、新陳代謝順暢及加快血液循環</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="tab-pane fade" id="pills-phone02" role="tabpanel" aria-labelledby="pills-phone02-tab">
+
+                    <div class="phone_block01_introduction02">
+                        <div class="phone_block01Img_01"></div>
+                        <div class="downlayer">
+                            <div class="subtitle">技術二</div>
+                            <div class="slogan">不只冬天，一年四季，<br>天天睡得舒適自在。</div>
+                            <div class="Smallslogan">與日本遠紅外線床墊同步，<br>擺拖只能在冬天使用的傳統模式</div>
+                            <div class="detail">
+                                在夏天裡，它更可以透過人體的體溫，
+                                <br>讓『奈米銀』釋放出特有的物理效應外，
+                                <br>更可以讓『奈米鍺』釋放出負離子 。</div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="pills-phone03" role="tabpanel" aria-labelledby="pills-phone03-tab">
+
+                    <div class="phone_block02_introduction03">
+                        <div class="phone_block02Img_01"></div>
+                        <div class="upperlayer">
+                            <div class="subtitle">技術三</div>
+                            <div class="slogan">房間空氣煥然一新，在家即刻享受 <br>1/2郊外的好空氣。</div>
+                            <div class="Smallslogan">高達2871的負離子含量</div>
+                            <div class="detail">
+                                負離子又稱空氣維生素，呼吸負離子空氣，
+                                <br>使血液呈弱鹼性，增強抵抗力。
+                                <br>去除屋內霉味、菸臭味。 </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="tab-pane fade" id="pills-phone04" role="tabpanel" aria-labelledby="pills-phone04-tab">
+
+                    <div class="phone_block02_introduction04">
+                        <div class="phone_block02Img_02"></div>
+                        <div class="downlayer">
+                            <div class="subtitle">技術四</div>
+                            <div class="slogan">輕輕觸碰，調整你的專屬溫度</div>
+                            <div class="Smallslogan">獨特設計，燙傷、漏電 OUT ! <br>您的安全我來把關</div>
+                            <div class="detail">
+                                8段式加熱、12小時定時觸控設計，
+                                <br>再加上獨特發熱布，不怕灼傷你的身體，
+                                <br>安穩放鬆您的一天疲憊與辛勞。</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="block02">
         <div class="container">
-            <div class="block02Img"></div>
-            <div class="upperlayer">
-                <div class="subtitle">技術三</div>
-                <div class="slogan">房間空氣煥然一新，在家即刻享受1/2郊外的好空氣。</div>
-                <div class="Smallslogan">高達2871的負離子含量</div>
-                <div class="detail">
-                    負離子又稱空氣維生素，呼吸負離子空氣，
-                    <br>使血液呈弱鹼性，增強抵抗力。
-                    <br>去除屋內霉味、菸臭味... </div>
-                <div class="ViewMore">View More</div>
+
+            <ul class="nav nav-pills mb-3" id="pills-tab_block02" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="pills-introduction04-tab" data-toggle="pill"
+                        href="#pills-introduction04" role="tab" aria-controls="pills-introduction04"
+                        aria-selected="true">技術四</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-introduction03-tab" data-toggle="pill" href="#pills-introduction03"
+                        role="tab" aria-controls="pills-introduction03" aria-selected="false">技術三</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-introduction04" role="tabpanel"
+                    aria-labelledby="pills-introduction04-tab">
+
+                    <div class="block02_introduction02">
+                        <div class="block02Img_02"></div>
+                        <div class="downlayer">
+                            <div class="subtitle">技術四</div>
+                            <div class="slogan">輕輕觸碰，調整你的專屬溫度</div>
+                            <div class="Smallslogan">獨特設計，燙傷、漏電 OUT ! 您的安全我來把關</div>
+                            <div class="detail">
+                                8段式加熱、12小時定時觸控設計，
+                                <br>再加上獨特發熱布，不怕灼傷你的身體，
+                                <br>安穩放鬆您的一天疲憊與辛勞。</div>
+                            <!-- <div class="ViewMore">View More</div> -->
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="tab-pane fade" id="pills-introduction03" role="tabpanel"
+                    aria-labelledby="pills-introduction03-tab">
+
+                    <div class="block02_introduction01">
+                        <div class="block02Img_01"></div>
+                        <div class="upperlayer">
+                            <div class="subtitle">技術三</div>
+                            <div class="slogan">房間空氣煥然一新，在家即刻享受1/2郊外的好空氣。</div>
+                            <div class="Smallslogan">高達2871的負離子含量</div>
+                            <div class="detail">
+                                負離子又稱空氣維生素，呼吸負離子空氣，
+                                <br>使血液呈弱鹼性，增強抵抗力。
+                                <br>去除屋內霉味、菸臭味。 </div>
+                            <!-- <div class="ViewMore">View More</div> -->
+                        </div>
+                    </div>
+
+
+
+                </div>
+
             </div>
-            <div class="downlayer">
-                <div class="subtitle">技術四</div>
-                <div class="slogan">輕輕觸碰，調整你的專屬溫度</div>
-                <div class="Smallslogan">獨特設計，燙傷、漏電 OUT ! 您的安全我來把關</div>
-                <div class="detail">
-                    8段式加熱、12小時定時觸控設計，
-                    <br>再加上獨特發熱布，不怕灼傷你的身體，
-                    <br>安穩放鬆您的一天疲憊與辛勞。</div>
-                <div class="ViewMore">View More</div>
+
+
+            <!-- <div class="block02_introduction02">
+                <div class="block02Img_02"></div>
+                <div class="downlayer">
+                    <div class="subtitle">技術四</div>
+                    <div class="slogan">輕輕觸碰，調整你的專屬溫度</div>
+                    <div class="Smallslogan">獨特設計，燙傷、漏電 OUT ! 您的安全我來把關</div>
+                    <div class="detail">
+                        8段式加熱、12小時定時觸控設計，
+                        <br>再加上獨特發熱布，不怕灼傷你的身體，
+                        <br>安穩放鬆您的一天疲憊與辛勞。</div>
+                    <div class="ViewMore">View More</div>
+                </div>
             </div>
+            <div class="block02_introduction01">
+                <div class="block02Img_01"></div>
+                <div class="upperlayer">
+                    <div class="subtitle">技術三</div>
+                    <div class="slogan">房間空氣煥然一新，在家即刻享受1/2郊外的好空氣。</div>
+                    <div class="Smallslogan">高達2871的負離子含量</div>
+                    <div class="detail">
+                        負離子又稱空氣維生素，呼吸負離子空氣，
+                        <br>使血液呈弱鹼性，增強抵抗力。
+                        <br>去除屋內霉味、菸臭味... </div>
+                    <div class="ViewMore">View More</div>
+                </div>
+            </div> -->
+            <!-- <div class="btn_group02">
+                <button type="button" class="btn btn-info">技術四</button>
+                <button type="button" class="btn btn-info">技術三</button>
+            </div> -->
         </div>
+
     </div>
+    </div>
+
     <div id="block03">
         <div class="container">
             <div class="title">
-                <div class="titleLeft">線</div>
-
+                <div class="titleLeft"><img src="/04-img/newline.png" alt=""></div>
+                <div class="titleLeft_phone"><img src="/04-img/phone_line01.png" alt=""></div>
                 <div class="titleRight">產品介紹</div>
             </div>
-            <div class="icon"></div>
-            <div class="icon"></div>
-            <div class="card">
-                <div class="cardImg"></div>
-                <div class="cardWord">
-                    <div class="product">豪華型透氣防水型遠紅外線床墊</div>
-                    <div class="SmallProduct">親膚細緻/透氣防水/簡單觸控/舒適溫熱</div>
-                    <div class="detail">
-                        輕鬆一覺到天亮，
-                        <br>快速消除疲勞，
-                        <br>讓你一身輕盈迎接每一天。</div>
-                    <div class="ViewMore">View More</div>
+
+            <ul class="nav nav-pills mb-3" id="pills-tab_block03" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="pills-sleep-tab" data-toggle="pill" href="#pills-sleep" role="tab"
+                        aria-controls="pills-sleep" aria-selected="true">養身睡眠系列</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-office-tab" data-toggle="pill" href="#pills-office" role="tab"
+                        aria-controls="pills-office" aria-selected="false">健康辦公系列</a>
+                </li>
+
+            </ul>
+
+            <div class="tab-content" id="pills-tabContent">
+
+                <div class="tab-pane fade show active" id="pills-sleep" role="tabpanel"
+                    aria-labelledby="pills-sleep-tab">
+
+                    <!-- Swiper -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+
+                                <div class="card">
+                                    <img class="card-img-top" src="/04-img/bloock0301.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">豪華型透氣防水型遠紅外線床墊</h5>
+                                        <div class="SmallProduct">親膚細緻/透氣防水/簡單觸控/舒適溫熱</div>
+                                        <p class="card-text"> 輕鬆一覺到天亮，
+                                            快速消除疲勞，
+                                            <br>讓你一身輕盈迎接每一天。
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <!-- <a class="text-muted" class="ViewMore" href="">View More</a> -->
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#exampleModalLong_sleep01">
+                                            ViewMore
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img class="card-img-top" src="/04-img/block0302.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">遠紅外線黃金棉被健康毯</h5>
+                                        <div class="SmallProduct">抗菌率90%/奈米科技/抽絲技術/台灣製造</div>
+                                        <p class="card-text"> 柔軟、除臭、抗菌、保暖、透氣
+                                            <br>五個願望一次滿足。
+                                            <br>呵護您的每一個美好夜晚。
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <!-- <a class="text-muted" class="ViewMore" href="">View More</a> -->
+
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#exampleModalLong_sleep02">
+                                            ViewMore
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img class="card-img-top" src="/04-img/block0303.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">樂活優眠型記憶枕</h5>
+                                        <div class="SmallProduct">改良枕型/無悶熱感/肩頸完美支撐</div>
+                                        <p class="card-text"> 完美符合專屬您的肩頸弧度，<br>
+                                            輕鬆解決您與床墊間的服貼性。<br>
+                                            讓明天更舒活。</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <!-- <a class="text-muted" class="ViewMore" href="">View More</a> -->
+
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#exampleModalLong_sleep03">
+                                            ViewMore
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img class="card-img-top" src="/04-img/block0307.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">肩頸舒壓型記憶枕</h5>
+                                        <div class="SmallProduct">符合人體工學/軟硬適中</div>
+                                        <p class="card-text"> 根據您的肩頸的弧度，<br>
+                                            做適度的密合，<br>以達到肩頸肌肉完全放鬆的狀態。
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <!-- <a class="text-muted" class="ViewMore" href="">View More</a> -->
+
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#exampleModalLong_sleep04">
+                                            ViewMore
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img class="card-img-top" src="/04-img/block0308.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">超值居家型遠紅外線床墊</h5>
+                                        <div class="SmallProduct">多機能纖維布/雙面設計
+
+                                        </div>
+                                        <p class="card-text"> 八段式的溫度控制<br>
+                                            完全符合人體舒適睡眠溫度的需求，<br>
+                                            更不用擔心電磁波對人體的影響。
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <!-- <a class="text-muted" class="ViewMore" href="">View More</a> -->
+
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#exampleModalLong_sleep05">
+                                            ViewMore
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="swiper-slide">Slide 6</div>
+                            <div class="swiper-slide">Slide 7</div>
+                            <div class="swiper-slide">Slide 8</div>
+                            <div class="swiper-slide">Slide 9</div> -->
+
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="cardImg"></div>
-                <div class="cardWord">
-                    <div class="product">遠紅外線黃金棉被健康毯</div>
-                    <div class="SmallProduct">抗菌率90%/奈米科技/抽絲技術/台灣製造</div>
-                    <div class="detail">
-                        柔軟、除臭、抗菌、保暖、透氣
-                        <br>五個願望一次滿足。
-                        <br>呵護您的每一個美好夜晚。</div>
-                    <div class="ViewMore">View More</div>
+
+
+                <!-- ---------------------------------------------------------------------------------------------------- -->
+
+                <div class="tab-pane fade" id="pills-office" role="tabpanel" aria-labelledby="pills-office-tab">
+
+                    <!-- Swiper -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+
+                                <div class="card">
+                                    <img class="card-img-top" src="/04-img/block0304.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">遠紅外線舒活健康抱枕</h5>
+                                        <div class="SmallProduct">腰痠小幫手/親膚細緻/舒適溫熱</div>
+                                        <p class="card-text"> 幫助女性舒緩經期腹部、腰部的疼痛感，
+                                            <br>讓您不再為此而困擾。
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <!-- <a class="text-muted" class="ViewMore" href="">View More</a> -->
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#exampleModal_office01">
+                                            ViewMore
+                                        </button>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img class="card-img-top" src="/04-img/block0305.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">遠紅外線暖腳寶</h5>
+                                        <div class="SmallProduct">專屬足部熱敷/美觀又輕巧</div>
+                                        <p class="card-text"> 久站、長時間走動、穿著高跟鞋，
+                                            <br>快速緩解腳底疼痛感，
+                                            <br>居家、辦公都很適合。
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <!-- <a class="text-muted" class="ViewMore" href="">View More</a> -->
+
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#exampleModal_office02">
+                                            ViewMore
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img class="card-img-top" src="/04-img/block0306.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">遠紅外線mini熱敷墊</h5>
+                                        <div class="SmallProduct">方便好攜帶/肩頸腰背輕鬆熱敷</div>
+                                        <p class="card-text"> 減緩辦公久坐的痠痛與疲憊感，<br>
+                                            提升效率的好利器。<br>
+                                            讓您更加自在舒服。</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <!-- <a class="text-muted" class="ViewMore" href="">View More</a> -->
+
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#exampleModal_office03">
+                                            ViewMore
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img class="card-img-top" src="/04-img/block0309.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">USB遠紅外線手腕熱敷墊</h5>
+                                        <div class="SmallProduct">採用日本O.K.布(尼龍刷毛布)/強力黏扣效果</div>
+                                        <p class="card-text"> 運動、辦公、炒菜<br>
+                                            長時間使用手腕的不適，<br>
+                                            透過護腕和熱敷減輕負擔。</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <!-- <a class="text-muted" class="ViewMore" href="">View More</a> -->
+
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#exampleModal_office04">
+                                            ViewMore
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img class="card-img-top" src="/04-img/block0310.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">USB遠紅外線多用型熱敷墊</h5>
+                                        <div class="SmallProduct">腹部、腰部、子宮皆可熱敷</div>
+                                        <p class="card-text"> 辦公遇到身體不適，<br>
+                                            即刻使用多用型熱敷墊舒緩，<br>
+                                            方便又輕巧。</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <!-- <a class="text-muted" class="ViewMore" href="">View More</a> -->
+
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#exampleModal_office05">
+                                            ViewMore
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img class="card-img-top" src="/04-img/block0311.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">USB遠紅外線膝蓋熱敷墊</h5>
+                                        <div class="SmallProduct">布面立體耐黏扣容易/不易起毛球</div>
+                                        <p class="card-text"> 適用於高級運動護具、<br>
+                                            或需要強力黏扣效果之絆帶使用。
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <!-- <a class="text-muted" class="ViewMore" href="">View More</a> -->
+
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#exampleModal_office06">
+                                            ViewMore
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="swiper-slide">Slide 7</div>
+                            <div class="swiper-slide">Slide 8</div>
+                            <div class="swiper-slide">Slide 9</div>
+                            <div class="swiper-slide">Slide 10</div> -->
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <!-- <div class="card-deck"></div> -->
                 </div>
+
+
             </div>
-            <div class="card">
-                <div class="cardImg"></div>
-                <div class="cardWord">
-                    <div class="product">樂活優眠型記憶枕</div>
-                    <div class="SmallProduct">改良枕型/無悶熱感/肩頸完美支撐</div>
-                    <div class="detail">
-                        完美符合專屬您的肩頸弧度，
-                        <br>輕鬆解決您與床墊間的服貼性。
-                        <br>讓明天更舒活。</div>
-                    <div class="ViewMore">View More</div>
+
+            <!-- 各彈跳視窗內容 -->
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalLong_sleep01" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">豪華型透氣防水型遠紅外線床墊</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="">
+                                四大優點:<br>
+                                1. 安全 - DC直流電，遠離電磁波傷害。<br>
+                                2. 節能 - 8段溫度自由調整，12小時定時設定。<br>
+                                3. 舒適 - 可隨個人需求，調整溫度。<br>
+                                4. 享受 - 遠紅外線、負離子。<br>
+                            </div>
+                            <hr>
+                            <div>
+                                產品規格：<br>
+                                體積：180㎝ x 80㎝<br>
+                                電壓：輸入 AC110V ~ 240V，輸出 DC12V~24V<br>
+                                溫度：36℃~52℃智慧型八段全功率恆溫、定時( 附說明書 )<br>
+                            </div>
+
+                            <div>
+                                電費試算，以取大功率72W每天使用7小時，每度電價3元計算：<br>
+                                瓦特(W) x 運轉率(%) x 一天開機時數7小時 x 30(天)/1000 x 3元(每度電價)<br>
+                                每個月電費：(72 x 100% x 7 x 30 / 1000) x 3 = 45.36 元<br>
+                            </div>
+                            <hr>
+                            <div>
+                                注意事項:<br>
+                                1. 不可直接接觸傷口使用。<br>
+                                2. 請勿在飲酒後或是意識不清時使用。<br>
+                                3. 幼兒及長者使用時，請在旁監督。<br>
+                                4. 使用期間若有不適，請立即停止使用。<br>
+                                5. 通電時避免將絕熱材覆蓋在本產品上，或折疊時通電。<br>
+                                6. 產品不使用時,請拔下插頭。<br>
+                                7. 請勿用力拉扯電源線。<br>
+                                8. 『高血壓』『心臟病』或是『孕婦』在您使用『遠紅外線』及『負離子』相關產品時，請謹慎使用。<br>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalLong_sleep02" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">遠紅外線黃金棉被健康毯
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            遠紅外線棉被，表布採精緻親膚的提花紡織，<br>質地輕柔、觸感舒適，
+                            內胎採用『奈米銀能量黃金棉』<br>有著抗菌、除臭、保暖、透氣、柔軟....等，<br>
+                            全程台灣製造MIT，符合SGS檢驗合格標準，<br>經濟部工業局奈米技術產業應用<br>
+                            「TN-013奈米銀抗菌家飾用紡織品驗證規範」測試，<br>
+                            經水洗10次後，對於特定菌種之抗菌率，仍然達到90%以上，<br>
+                            讓我們在使用奈米科技產品的同時，<br>輕鬆享受能量科技所帶來的健康居家生活。<br>
+                            <hr>
+                            遠紅外線黃金棉健康毯的清洗方法：<br>
+                            遠紅外線黃金棉健康毯，結合黃金棉與遠紅外線能量科技，<br>
+                            配合特殊抽絲技術所製成。<br>所以在某些狀況下要進行清洗的時候，<br>
+                            建議不要直接放入洗衣機中清洗，<br>因為在洗衣機強力的搓揉之下，<br>
+                            很有可能會造成多機能纖維布特性的受損以及健康毯裡層結構的受損。<br>
+                            所以在大部分的情況下使用清水來清洗就足夠了，<br>
+                            除非污損得特別嚴重，<br>才需要考慮使用中性的洗滌劑 (例如標榜中性的專用冷洗精)來清洗，<br>
+                            不需要使用濃縮式的洗衣精或洗衣粉。<br>
+                            在清洗的過程中，只要用清水輕輕加以搓揉後，<br>
+                            用慢速脫水的方式處理，<br>不要使用一般洗衣機的高速脫水方式，<br>
+                            再加以晾乾或日曬就可以完成遠紅外線黃金棉健康毯的清洗了。
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalLong_sleep03" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">樂活優眠型記憶枕</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            美加寶 Megabo遠紅外線肩頸舒壓枕，健康負離子枕頭，<br>
+                            提供頭部頸部適當的支撐，使頸部能保持自然彎曲狀態，<br>
+                            讓您在還沒入睡前就能感受到彷彿孩兒時，<br>
+                            被媽咪、爹地抱在懷中那種舒適的感覺，<br>
+                            入睡後更能讓您的肩頸完全的支撐與放鬆，<br>
+                            在進入深度睡眠之餘，還能享受遠紅外線及負離子的浸潤，<br>讓明天更舒活。<br>
+                            <hr>
+                            ● 倍涼適材料，一年四季都可以使用，不會悶熱。<br>
+                            ● 遠紅外線肩頸舒壓枕，特別強調頭部與頸部以及床墊的服貼性。<br>
+                            ● 『他』可以讓頸部的延伸，完美的襯托頭部到最舒適的睡姿。
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalLong_sleep04" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">肩頸舒壓型記憶枕</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            
+                            睡眠是全身上下最放鬆的休息，<br>
+                            選擇一顆好的枕頭除了軟硬適中，<br>
+                            還要能夠根據您的肩頸的弧度，做適度的密合，<br>
+                            以達到肩頸肌肉完全放鬆的狀態，讓您的肩頸在睡眠中獲得最佳的舒適環抱。<br>
+
+                            美加寶 Megabo 遠紅外線肩頸舒壓枕【健康負離子枕頭】，<br>
+                            就是以醫學報導為基礎，<br>
+                            以保健等級的倍涼適再加上舒適記憶綿為枕芯，<br>
+                            再以多機能纖維布為表面布，透過人體工學的設計<br>
+                            加上遠紅外線、負離子、奈米銀、奈米鍺等所釋放出來的元素，<br>
+                            讓您我夜夜好眠。<br>
+                            <hr>
+                            除了使用倍涼適以及舒適記憶綿以外，更有著以下的特點:<br>
+                            遠紅外線、負離子、倍涼適、奈米銀、奈米鍺。
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalLong_sleep05" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">超值居家型遠紅外線床墊 </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            超值居家型遠紅外線床墊，<br>
+                            讓身體一年四季都可以沈浸在遠紅外線健康床墊的共振溫熱裡，<br>
+                            依據健康床墊舒適的睡眠溫度來調整睡眠環境的需求，<br>
+                            根據實際睡眠測試，遠紅外線健康床墊頭部不適合加熱，<br>
+                            而且以溫和的均熱和隨著環境的溫度來調整讓身體自然舒適，<br>
+                            因此有著八段的溫度控制以及12小時的定時調整，<br>
+                            完全符合人體舒適睡眠溫度的需求，<br>
+                            更遠離了電磁波對人體的影響，<br>
+                            美加寶 Megabo 遠紅外線健康床墊讓您的睡眠更加的健康與舒適。<br>
+                            <hr>
+                            ● 產品規格：<br>
+                            體積：180㎝ x 80㎝<br>
+                            電壓：輸入 AC110V ~ 240V，輸出 DC12V~24V<br>
+                            溫度：36℃~52℃智慧型八段全功率恆溫、定時( 附說明書 )<br>
+
+                            ● 電費試算，以取大功率72W每天使用7小時，<br>每度電價3元計算：<br>
+                            瓦特(W) x 運轉率(%) x 一天開機時數7小時 x 30(天)/1000 x 3元(每度電價)<br>
+                            每個月電費：(72 x 100% x 7 x 30 / 1000) x 3 = 45.36 元
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal_office01" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">遠紅外線舒活健康抱枕</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            遠紅外線抱枕，有著熱敷墊的溫熱與舒適，讓身體享受『遠紅外線』及『負離子』的環境。<br>
+                            不管是在家看電視、打電腦、辦公，有了抱枕可以讓你身體在寒冷的冬天多一份溫暖。<br>
+                            表布採精緻親膚的提花紡織，質地輕柔、觸感舒適，<br>
+                            枕心採用『奈米銀能量黃金棉』<br>
+                            有著抗菌、除臭、保暖、透氣、柔軟....等，<br>
+                            全程台灣製造MIT，符合SGS檢驗合格標準。<br>
+                            讓你抱起來更加舒服。<br>
+                            <hr>
+                            ● 產品規格：<br>
+                            體積：45㎝ x 45㎝<br>
+                            電壓：輸入 AC110V ~ 240V，輸出 DC12V~<br>
+                            溫度：36℃~52℃智慧型八段全功率恆溫( 附說明書 )<br>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal_office02" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">遠紅外線暖腳寶</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            暖腳寶，是讓腳底如果不冰冷，保持溫熱舒適，<br>
+                            身體自然而然就會暖和起來的遠紅外線產品，<br>
+                            這是古早時候，阿媽常說的一句話。<br>
+                            或許您我也曾有過如下的經驗：當冬天天氣寒冷的時候，<br>用棉被把全身包得緊緊的睡覺，<br>
+                            腳YY還是冷冷的，還需要再穿一雙襪子，<br>才會有一股暖暖的感覺湧上來，<br>
+                            同樣的棉被、同樣的床，但腳多穿了襪子，感覺就是不同。<br>好像...只要腳暖和了，身體自然就會稍為跟著暖和一些。
+                            <br>
+                            <hr>
+                            ●美加寶 Megabo 遠紅外線暖腳寶，產品規格<br>
+                            體積：36cm × 36cm × 5cm<br>
+                            電壓：輸入AC110V ~ 240V，輸出 DC 19V<br>
+                            功率：50W<br>
+                            溫度：35℃~60℃微調一次1℃<br>
+                            面板：環保鋁板<br>
+                            外殼：ABS塑膠材質
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal_office03" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">遠紅外線mini熱敷墊</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            輕巧方便型遠紅外線熱敷墊，<br>
+                            想熱敷那裡就墊那裡，<br>
+                            讓身體放鬆享受『遠紅外線』的特有的共振溫熱環境。<br>
+                            遠紅外線熱敷墊不只有在『特定』的<br>某個地方進行舒適的熱敷放鬆，<br>
+                            我們把熱敷墊『變』的更貼近您我的身旁，<br>
+                            也更溶入您我的居家生活，<br>因為『它』隨時隨地都可變成迷你電毯或電熱毯，<br>讓身體自在享受遠紅外線的生活空間<br>
+                            <hr>
+                            ● 美加寶 Megabo 遠紅外線健康熱敷墊使用範圍<br>
+
+                            ※ 辦公室 (熱敷、取暖)<br>
+                            ※ 居室生活 (沙發、床上、及椅子的靠墊或其他有靠背的地方)<br>
+
+                            ● 美加寶 Megabo 遠紅外線健康熱敷墊使用部位<br>
+                            ※ 腰部加熱。<br>
+                            ※ 腹部加熱。<br>
+                            ※ 頸肩部加熱。<br>
+
+                            ● 產品規格：<br>
+                            體積：60㎝ x 40㎝<br>
+                            電壓：輸入 AC110V ~ 240V，輸出 DC12V~24V<br>
+                            溫度：36℃~52℃智慧型八段全功率恆溫、定時( 附說明書 )<br>
+
+                            ● 電費試算，以取大功率48W每天使用7小時，每度電價3元計算：<br>
+                            瓦特(W) x 運轉率(%) x 一天開機時數7小時 x 30(天)/1000 x 3元(每度電價)<br>
+                            每個月電費：(48 x 100% x 7 x 30 / 1000) x 3 = 30.24 元<br>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal_office04" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">USB遠紅外線手腕熱敷墊</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+
+                            在手腕熱敷墊內部透氣網中，<br>
+                            加上美加寶 Megabo 以『石墨烯複合材料發熱布』為熱能來源的設計，<br>
+                            包覆著多功能纖維布，在25ºC的常溫下，就已有更高達0.91的遠紅外線放射率，<br>
+                            透過利用USB行動電源、電腦或是筆電的USB插座，<br>
+                            更可讓『石墨烯複合材料發熱布』產生熱能，<br>
+                            溫度大約在42ºC的恆溫，輕鬆舒緩您我手腕關節的酸痛或不適。<br>
+
+                            <hr>
+                            ● 產品規格：<br>
+                            體積：47㎝ x 10cm。<br>
+                            電壓： DC5V，1A。<br>
+                            溫度：約42℃智慧型恆溫控制。<br>
+
+                            ● 建議清洗方式：<br>
+                            用清水加入少量中性清潔劑稀釋後，將內層的碳維維複合發熱布取出來，
+                            <br>外層的OK布放入稀釋後的清潔劑中，輕輕用手搓揉、洗淨，<br>
+                            並放置陰涼處晾乾即可。<br>
+                            勿長時間浸泡於清潔劑或清水中，<br>
+                            並避免使用漂白劑。<br>請視使用狀況調整清洗次數，一般1至2星期清洗一次
+                            。
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal_office05" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">USB遠紅外線多用型熱敷墊</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            可用於腰部熱敷墊、腹部熱敷墊、暖宮(子宮)熱敷墊，<br>
+                            採用日本O.K.布(尼龍刷毛布)當主要的護腰布料，<br>
+                            OK布具有長效之黏扣效果。<br>
+
+                            <hr>
+                            ● 美加寶 Megabo 遠紅外線溫熱護腰使用部位<br>
+                            ※ 腰部加熱。<br>
+                            ※ 腹部加熱。<br>
+
+                            ● 產品規格：<br>
+                            體積：117㎝ x 21㎝ x 10cm。<br>
+                            電壓： DC5V，1.2A。<br>
+                            溫度：約42℃智慧型恆溫控制。<br>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal_office06" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">USB遠紅外線膝蓋熱敷墊</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            遠紅外線溫熱護膝(膝蓋熱敷墊)，<br>
+                            採用日本O.K.布(尼龍刷毛布)當主要的護膝布料，<br>
+                            OK布具有長效之黏扣效果，<br>
+                            膝蓋熱敷墊以碳纖維複合導電發熱布為發熱體，<br>
+                            適用於高級運動護具、或需要強力黏扣效果之絆帶使用。<br>
+                            再加上，日本O.K.布，布面立體耐黏扣容易，不易起毛球，<br>
+                            又具有四面伸縮(上下左右)超強的黏扣性，<br>
+                            長久使用而不會失去黏扣功能，因此，美加寶Megabo 遠紅外線溫熱護膝，<br>
+                            以日本O.K.布為面料，經過符合人體功學的剪裁設計，<br>
+                            讓遠紅外線溫熱護膝更能緊密的貼合您我的膝蓋關節。<br>
+                            <hr>
+                            ● 產品規格：<br>
+                            體積：54㎝ x 21㎝ x 25cm。<br>
+                            電壓： DC5V，1.2A。<br>
+                            溫度：約42℃智慧型恆溫控制。<br>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ----------------------------------------------------------------------------------------------- -->
+
+
+
         </div>
     </div>
+
     <div id="block04">
         <div class="container">
-            <div class="video"></div>
+            <div class="title">負離子遠紅外線功效介紹</div>
+            <div class="video">
+                <iframe width="720" height="480" src="https://www.youtube.com/embed/_FXNVpVwho0?rel=0" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
         </div>
     </div>
+
     <div id="block05">
         <div class="container">
             <div class="title">
-                <div class="titleLeft">線</div>
+                <div class="titleLeft"><img src="/04-img/newline.png" alt=""></div>
+                <div class="titleLeft_phone"><img src="/04-img/phone_line01.png" alt=""></div>
                 <div class="titleRight">常見問題</div>
             </div>
-            <hr class="long">
-            <hr class="short">
-            <div class="QAname">檢驗報告</div>
-            <hr class="short">
-            <div class="QAname">報固</div>
-            <hr class="short">
-            <div class="QAname">運送方式</div>
-            <hr class="short">
-            <div class="QAname">退貨辦法</div>
-            <hr class="long">
+
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne">
+                                購買方法
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            1.平日10:00-17:00 歡迎來電訂購 <br> 電話:04-22856058。<br>
+                            2.平日10:00-17:00 歡迎來店體驗與訂購<br> 地址:台中市南區忠孝路78-7號。<br>
+                            3.歡迎來信訂購 (回覆時間約1~2個工作天)<br> 信箱:megabo.store@gmail.com。
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                運送方式
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            統一由物流寄送到府
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                保固
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            保固1年，保固期內有任何問題，皆可先打客服詢問，若需要維修再將物品寄回維修。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- <div class="QandA">
+                <hr class="long">
+                <hr class="short">
+                <div class="QAname">檢驗報告</div>
+                <hr class="short">
+                <div class="QAname">保固</div>
+                <hr class="short">
+                <div class="QAname">運送方式</div>
+                <hr class="short">
+                <div class="QAname">退貨辦法</div>
+                <hr class="long">
+            </div> -->
         </div>
     </div>
+
     <div id="block06">
-        <img src="" alt="">
+        <div class="BG_img"></div>
     </div>
+
     <div id="block07">
         <div class="container">
             <div class="title">
-                <div class="titleLeft">線</div>
-                <div class="titleRight">關於我們</div>
-                <div class="titleRight">最新消息</div>
+                <div class="titleLeft"><img src="/04-img/newline.png" alt=""></div>
+                <div class="titleLeft_phone"><img src="/04-img/phone_line01.png" alt=""></div>
+                <div class="titleRight01">關於我們</div>
+                <div class="titleRight02">最新消息</div>
             </div>
             <div class="about">
-                <h1>企業理念</h1>
-                <p>我們始終堅信，身為地球村的一份子，一定要盡我們的所能，
-                    <br>發會所長，開發出更健康與節能的產品，讓使用者受惠。</p>
-                <h1>企業願景</h1>
-                <p>不斷創新，堅持品質，為大眾創造健康安全便利的居家生活。</p>
+                <span> 企業理念 </span>
+                <p>我們始終堅信，身為地球村的一份子，<br>一定要盡我們的所能，
+                    <br>發會所長，開發出更健康與節能的產品，<br>讓使用者受惠。</p>
+                <span> 企業願景 </span>
+                <p>不斷創新，堅持品質，
+                    <br>為大眾創造健康安全便利的居家生活。</p>
             </div>
-            <hr class="straight">
+            <div class="stright"><img src="/04-img/newlineSS.png" alt=""></div>
+            <div class="titleLeft_phone"><img src="/04-img/phone_line01.png" alt=""></div>
+            <div class="phone_newtitle">最新消息</div>
             <div class="news">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                            aria-controls="pills-home" aria-selected="true">新品</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+                            aria-controls="pills-profile" aria-selected="false">活動</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+                            aria-controls="pills-contact" aria-selected="false">公告</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab">
+                        <!-- <div>2018.01.01 - </div><a href="">遠紅外線健康床墊 新品上市~~~</a>
+                        <div>2018.01.11 - </div>
+                        <a href="">遠紅外線健康床墊 新品上市~~~</a> -->
+
+                        <div>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#exampleModal01">
+                                2018.01.01--遠紅外線健康床墊 新品上市~~~
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal01" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">遠紅外線健康床墊 新品上市</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia
+                                            eveniet
+                                            quasi iste eaque nihil accusantium molestiae, maxime quidem ad beatae
+                                            cum
+                                            itaque quam nemo porro possimus obcaecati, quod accusamus doloremque.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#exampleModal02">
+                                2018.01.01--遠紅外線健康床墊 新品上市~~~
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal02" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">遠紅外線健康床墊 新品上市</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Lorem ipsum dolor,
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#exampleModal03">
+                                2019.02.01--test 新品上市~~~
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal03" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">test 新品上市</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia
+                                            eveniet
+                                            quasi iste eaque nihil accusantium
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+                        <div>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#exampleModal04">
+                                2018.01.01--說明會~~~
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal04" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">說明會</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            快來參加喔!!
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#exampleModal05">
+                                2017.12.01--冷氣團來襲~說明會幫你抵抗寒流~~
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal05" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">說明會</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            健康墊讓你溫暖過冬
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <div>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#exampleModal06">
+                                2019.01.31--年假營業時間調整
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal06" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">說明會</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            初四開始正常上班
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="news">
                 <div class="newsTitle">新品</div>
                 <div class="newsTitle">活動</div>
                 <div class="newsTitle">公告</div>
@@ -205,47 +1478,223 @@
                     <hr>
                     <div class="word">豪華透氣防水型遠紅外線床墊 新上市~~</div>
                 </div>
+            </div>-->
+            <div class="clearfix"></div>
+
+
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"> <a class="imgcss" data-fancybox="gallery" href="/04-img/pc900.png"><img
+                                src="/04-img/pc00.png"></a></div>
+                    <div class="swiper-slide"> <a class="imgcss" data-fancybox="gallery" href="/04-img/pc901.png"><img
+                                src="/04-img/pc01.png"></a></div>
+                    <div class="swiper-slide"> <a class="imgcss" data-fancybox="gallery" href="/04-img/pc902.png"><img
+                                src="/04-img/pc02.png"></a></div>
+                    <div class="swiper-slide"> <a class="imgcss" data-fancybox="gallery" href="/04-img/pc903.png"><img
+                                src="/04-img/pc03.png"></a></div>
+                    <!-- <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div> -->
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+
+
+                <!-- Add Arrows -->
+                <!-- <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div> -->
             </div>
-            <div class="imgGroup">
-                <div class="SmallImg"></div>
-                <div class="SmallImg"></div>
-                <div class="SmallImg"></div>
-                <div class="SmallImg"></div>
-                <div class="SmallImg"></div>
-                <div class="SmallImg"></div>
-            </div>
+
+
+
+            <!-- <div class="imgGroup">
+                <a class="imgcss" data-fancybox="gallery" href="/04-img/pc900.png"><img src="/04-img/pc00.png"></a>
+                <a class="imgcss" data-fancybox="gallery" href="/04-img/pc901.png"><img src="/04-img/pc01.png"></a>
+                <a class="imgcss" data-fancybox="gallery" href="/04-img/pc902.png"><img src="/04-img/pc02.png"></a>
+                <a class="imgcss" data-fancybox="gallery" href="/04-img/pc903.png"><img src="/04-img/pc03.png"></a>
+            </div> -->
+
+
         </div>
     </div>
+
     <div id="footer">
-        <div class="color">
+        <div class="container">
             <div class="left">
-                <a href="" class="footerTitle">美加寶遠紅外線產品</a>
-                <a href="">床墊系列</a>
-                <a href="">辦公室系列</a>
+                <div class="footerTitle">美加寶遠紅外線產品</div>
+                <a href="#pills-sleep-tab">養身睡眠系列</a>
+                <a href="#pills-office-tab">健康辦公系列</a>
             </div>
             <div class="right">
-                <a href="" class="footerTitle">關注美加寶</a>
-                <a href="">獨家技術 </a>
-                <a href="">常見問題</a>
-                <a href="">最新消息</a>
+                <div class="footerTitle">關注美加寶</div>
+                <a href="#block01">獨家技術 </a>
+                <a href="#block05">常見問題</a>
+                <a href="#block07">最新消息</a>
             </div>
+
             <div class="down">
-                <p>Copyright©2018 美加寶Megabo健康科技能量生活館</p>
+                <p>Copyright©2019 十善緣健康有限公司</p>
             </div>
-            <hr class="straight">
+
+            <div class="shortline">
+                <img src="/04-img/newlineDD.png" alt="">
+            </div>
+
             <div class="connection">
-                <a href="" class="footerTitle">聯絡我們</a>
-                <div class="word">
-                    台中市南區忠孝路78-7號<br>
-                    信箱：megabo.store@gmail.com<br>
-                    電話訂購及客服專線:04-25208628<br>
-                    營業時間:週一 ~週五:10：00～17：00<br>
-                </div>
+
+                <div class="footerTitle">聯絡我們</div>
+
+                台中市南區忠孝路78-7號<br>
+                信箱：megabo.store@gmail.com<br>
+                電話訂購及客服專線:04-22856058<br>
+                營業時間:週一 ~週五:10：00～17：00<br>
+
             </div>
+
+            <!-- <div class="QRcord">
+                <img src="/04-img/fb.png" alt="">
+                <img src="/04-img/line.png" alt="">
+              </div> -->
 
 
         </div>
     </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+    <!-- 燈箱套件 -->
+
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.js"></script>
+
+
+
+    <!-- Swiper JS -->
+    <script src="../dist/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('#pills-sleep .swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            freeMode: true,
+            observer: true,
+            observeParents: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            breakpoints: {
+                //螢幕畫面小於480px 
+                480: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                },
+            }
+        });
+
+    </script>
+    <script>
+        var swiper = new Swiper('#pills-office .swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            freeMode: true,
+            observer: true,
+            observeParents: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                //螢幕畫面小於480px 
+                480: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                },
+            }
+        });
+    </script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            freeMode: true,
+            observer: true,
+            observeParents: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                //螢幕畫面小於480px 
+                480: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                },
+            }
+        });
+    </script>
+
+    <!--observer: true,observeParents: true, 這是讓swiper初始化的指令  -->
+
+    <!-- 燈箱 -->
+    <script>
+        $(document).ready(function () {
+            $(".fancybox").fancybox({
+                openEffect: 'none',
+                closeEffect: 'none'
+            });
+        });
+    </script>
+
+    <!-- <script>
+        let img_block01;
+        let btn = "url('../04-img/01.jpg')";
+        let img_front_src = "url('../04-img/01.jpg')";
+        let img_behidden_src = "url('../04-img/02.jpg')";
+
+        function test() {
+            // img_front_src = "url('../04-img/01.jpg')";
+            // console.log(img_front_src);
+            if (img_block01 == img_front_src) {
+                btn.setAttribute("backgroundImage", img_behidden_src);
+            }
+            else {
+                btn.setAttribute("backgroundImage", img_front_src);
+            }
+        }
+
+
+
+
+    </script> -->
+
+
+
+
+
+
 </body>
+
+
+
 
 </html>

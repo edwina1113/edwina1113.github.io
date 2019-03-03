@@ -13,7 +13,7 @@ body{
 
 @media(max-width:480px){
     .container{
-        width: 410px;
+        width: 350px;
     }
 }
 .clearfix{
@@ -693,7 +693,11 @@ body{
     
     #block03 .swiper-container {
     height: 600px;
-  }
+   }
+    #block03 .nav-link {
+    font-size: 1.25rem;
+    } 
+
 }
 
 /* block04-------------------------- */
@@ -800,7 +804,7 @@ body{
     }
     #accordionExample{
         margin-top: 30px;
-        width: 90%;
+        width: 100%;
         margin-left: 0px;
     }
 
@@ -826,7 +830,8 @@ body{
         background-image: url("/04-img/IMG_7783.jpg");
         background-size: cover;
         background-position: -280px 0px;
-       
+        background-attachment: none;
+    
     }
 }
 /* block07--------------------- */

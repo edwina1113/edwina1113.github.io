@@ -263,10 +263,13 @@ body{
 .phone_block01_introduction01 .slogan{
     font-size: 12pt;
     line-height: 30px;
+    font-weight: bolder;
+    color: #ac9940;
 }
 .phone_block01_introduction01 .Smallslogan{
     font-size: 12pt;
     line-height: 10px;
+    color: #ac9940;
 }
 
 .phone_block01_introduction01 .detail{
@@ -292,11 +295,14 @@ body{
 .phone_block01_introduction02 .slogan{
     font-size: 12pt;
     line-height: 20px;
+    font-weight: bolder;
+    color: #ac9940;
 }
 .phone_block01_introduction02 .Smallslogan{
     font-size: 12pt;
     line-height: 16px;
     margin-top: 10px;
+    color: #ac9940;
 }
 
 .phone_block01_introduction02 .detail{
@@ -460,11 +466,14 @@ body{
 .phone_block02_introduction03 .slogan{
     font-size: 12pt;
     line-height: 20px;
+    font-weight: bolder;
+    color: #ac9940;
 }
 .phone_block02_introduction03 .Smallslogan{
     font-size: 12pt;
     line-height: 16px;
     margin-top: 10px;
+    color: #ac9940;
 }
 
 .phone_block02_introduction03 .detail{
@@ -491,11 +500,14 @@ body{
 .phone_block02_introduction04 .slogan{
     font-size: 12pt;
     line-height: 20px;
+    font-weight: bolder;
+    color: #ac9940;
 }
 .phone_block02_introduction04 .Smallslogan{
     font-size: 12pt;
     line-height: 16px;
     margin-top: 10px;
+    color: #ac9940;
 }
 
 .phone_block02_introduction04 .detail{
@@ -826,10 +838,10 @@ body{
 .PhoneBG_img{
     display: none;
     width: 100%;
-    height: 370px;
-    background-image: url("/04-img/IMG_7783.jpg");
+    height: 100%;
+    background-image: url("/04-img/phonebigimg");
     background-size: cover;
-    background-position:-350px 0px;
+    background-position:0 0;
 }
 
 @media(max-width:480px){

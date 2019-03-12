@@ -815,6 +815,7 @@ body{
     padding-top: 150px;
 }
 .BG_img{
+    display: block;
     width: 100%;
     height: 770px;
     background-image: url("/04-img/IMG_7783.jpg");
@@ -822,15 +823,21 @@ body{
     background-position: 0 -150px;
     background-attachment: fixed;
 }
+.PhoneBG_img{
+    display: none;
+    width: 100%;
+    height: 770px;
+    background-image: url("/04-img/IMG_7783.jpg");
+    background-size: cover;
+    background-position:280 0px;
+}
 
 @media(max-width:480px){
     .BG_img{
-        width: 100%;
-        height: 300px;
-        background-image: url("/04-img/IMG_7783.jpg");
-        background-size: cover;
-        background-position: -280px 0px;
-        background-attachment: none;
+        display: none;
+    }
+    .PhoneBG_img{
+        display: block;
     }
 }
 /* block07--------------------- */

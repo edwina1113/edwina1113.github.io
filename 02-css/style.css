@@ -192,7 +192,7 @@ body{
     height: 240px;
     background-color:#fcefc3;
     float: right;
-    margin-right: 32px;
+    margin-right: 20px;
     margin-top: -300px;
 }
 #block01 .block01Img_02{
@@ -831,7 +831,6 @@ body{
         background-size: cover;
         background-position: -280px 0px;
         background-attachment: none;
-    
     }
 }
 /* block07--------------------- */

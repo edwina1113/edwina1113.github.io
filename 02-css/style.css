@@ -826,10 +826,10 @@ body{
 .PhoneBG_img{
     display: none;
     width: 100%;
-    height: 770px;
+    height: 370px;
     background-image: url("/04-img/IMG_7783.jpg");
     background-size: cover;
-    background-position:280 0px;
+    background-position:-350px 0px;
 }
 
 @media(max-width:480px){

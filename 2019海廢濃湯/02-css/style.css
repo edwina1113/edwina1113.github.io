@@ -1,0 +1,224 @@
+*{
+    box-sizing: border-box;
+ }
+ body{
+     margin: 0;
+ }
+ .container{
+     width: 1900px;
+     height: 100%;
+     margin: auto;
+ }
+ .clearfix{
+    clear: both;
+}
+/*-----------------------------------------------*/
+#block04{
+    width: 100%;
+    height: 1700px;
+    /* 1565+135 */
+}
+h1{
+    text-align:center;
+    margin-top: 135px;
+    margin-bottom: 0px;
+    font-size: 50pt;
+}
+.Box01{
+    width:100%;
+    height:100%;
+}
+.Box02{
+    width:100%;
+    height:100%;
+    margin-top: 35px;
+}
+.LeftBox{
+    margin-top:67.5px;
+    float: left;
+    margin-left: 405px;
+    position: relative;
+  
+}
+#block04 .up{
+    height: 405px;
+    width: 540px;
+    background: #717071;
+    left: -20px;
+    top: -25px;
+    position: absolute;
+    border-radius:10px;
+}
+#block04 .down{
+    height: 405px;
+    width: 540px;
+    background: #9e9e9f;
+    float: left; 
+    border-radius:10px;
+}
+.RightWord{
+    margin-left: 67.5px;
+    float: left;
+    margin-right: 390px;
+}
+h3{
+    font-size: 24pt;
+    padding-top:35px;
+}
+h4{
+    font-size: 18pt;
+    padding-top:10px;
+    line-height: 35px;
+}
+/* --------------------------------- */
+#block05{
+    width: 100%;
+    height: 1000px;
+    background: #9e9e9f;
+}
+.trash{
+    width:100%;
+    height:100%;
+    position: relative;
+}
+.MoveCan{
+    float: left;
+    margin-bottom: 135px;
+    margin-left: 540px;
+    background: #717071;
+    width: 285px;
+    height: 300px;
+    position: absolute;
+    top: 565px;
+}
+.ReadBox{
+    float: left;
+    margin-top: 135px;
+}
+#block05 .up{
+    height: 730px;
+    width: 540px;
+    background: #fff;
+    left: 968px;
+    top: 150px;
+    position: absolute;
+    border-radius:10px;
+}
+#block05 .down{
+    height: 730px;
+    width: 540px;
+    background: #717071;
+    float: left; 
+    border-radius:10px;
+    top: 135px;
+    left: 955px;
+    position: absolute;
+}
+.Top{
+    position: relative;
+}
+.Bottom{
+    position: relative;
+    margin-top: 170px;
+}
+.pointLeft{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.line{
+    margin-left: 30px;
+    margin-right: 20px;
+    top: 20px;
+    position: absolute;
+}
+.point{
+    margin-top: 10px;
+    margin-left: 470px;
+}
+h2{
+    text-align:center;
+    margin-top: 135px;
+    margin-bottom: 0px;
+    font-size: 35pt;
+}
+#block05 p{
+    font-size: 24pt;
+    text-align:center;
+    margin-top: 67.5px;
+}
+/* ---------------------------------------------- */
+
+#block06{
+    width: 100%;
+    height: 1000px;
+    overflow: hidden;
+}
+.NewsBox{
+    width: 540px;
+    height: 460px;
+}
+#block06 img{
+    width: 100%;
+    height: 100%;
+    background-position: 0 0;
+    background-size: cover;
+}
+
+#block06 .swiper-slide{
+    width: 548px !important; 
+    margin-top: 67.5px;
+}
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets{
+    bottom: -2530px;
+    left: 0;
+    width: 100%;
+}
+.NewsBox :hover {
+    width: 540px;
+    height: 230px;
+    background-color: rgba(0,0,0, 1);
+    transition: 1s;
+}
+
+/* ------------------------------------------------------------------ */
+#block07{
+    width: 100%;
+    height: 1000px;
+}
+.PersonBlock01{
+    width: 100%;
+    /* height: 100%; */
+    margin-top: 67.5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+#block07 .Person:first-child{
+    margin-left: 0px;
+}
+.Person{
+    height: 650px;
+    width: 405px;
+    margin-left: 20px;
+    float: left;
+ 
+}
+.PersonImg{
+    width:100%;
+    height: 405px;
+    background-color: #717071;
+    border-radius:8px;
+}
+.PersonName h2{
+    text-align:center;
+    margin-top: 17px;
+    margin-bottom: 0px;
+    font-size: 35pt;
+}
+.PersonName h3{
+    text-align:center;
+    margin-top: -20px;
+    margin-bottom: 0px;
+    font-size: 24pt;
+}

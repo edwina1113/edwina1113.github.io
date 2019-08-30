@@ -62,7 +62,7 @@ body{
 #banner{
     width: 100%;
     height: 100vh;
-    background-image: url("/04-img/banner04.png");
+    background-image: url("../04-img/banner04.png");
     background-size: cover;
     background-position: 50 -150;
     /* transform: scale(1.4); */
@@ -144,7 +144,7 @@ body{
 #block01 .block01Img_01{
     width: 645px;
     height: 385px;
-    background-image: url("/04-img/024.jpg"); 
+    background-image: url("../04-img/024.jpg"); 
     background-position:0px 0px;
     background-size: cover;
     margin-top: 0px;
@@ -201,7 +201,7 @@ body{
 #block01 .block01Img_02{
     width: 645px;
     height: 385px;
-    background-image: url("/04-img/01.jpg");
+    background-image: url("../04-img/01.jpg");
     background-position: 0 0;
     background-size: cover;
     margin-top:  50px;
@@ -257,7 +257,7 @@ body{
 .phone_block01Img_02{
     width: 100%;
     height: 200px;
-    background-image: url("/04-img/01.jpg");
+    background-image: url("../04-img/01.jpg");
     background-position: 0 0;
     background-size: cover;
     float: left;
@@ -280,7 +280,7 @@ body{
 .phone_block01Img_01{
     width: 100%;
     height: 200px;
-    background-image: url("/04-img/021.png");
+    background-image: url("../04-img/024.jpg");
     background-position: 0 0;
     background-size: cover;
     float: left;
@@ -363,7 +363,7 @@ body{
 #block02 .block02Img_01{
     width: 645px;
     height: 385px;
-    background-image: url("/04-img/03.jpg"); 
+    background-image: url("../04-img/03.jpg"); 
     background-position: 0 0;
     background-size: cover; 
     float: right;
@@ -422,7 +422,7 @@ body{
 #block02 .block02Img_02{
     width: 645px;
     height: 385px;
-    background-image: url("/04-img/04.png");
+    background-image: url("../04-img/04.png");
     background-position: 0 0;
     background-size: cover;
     float: left;
@@ -478,7 +478,7 @@ body{
 .phone_block02Img_01{
     width: 100%;
     height: 200px;
-    background-image: url("/04-img/03.jpg");
+    background-image: url("../04-img/03.jpg");
     background-position: 0 0;
     background-size: cover;
     float: left;
@@ -509,7 +509,7 @@ body{
 .phone_block02Img_02{
     width: 100%;
     height: 200px;
-    background-image: url("/04-img/04.png");
+    background-image: url("../04-img/04.png");
     background-repeat: no-repeat;
     background-size: contain;
     float: left;
@@ -819,7 +819,7 @@ body{
 .BG_img{
     width: 100%;
     height: 770px;
-    background-image: url("/04-img/IMG_7783.jpg");
+    background-image: url("../04-img/IMG_7783.jpg");
     background-size: cover;
     background-position: 0 -150px;
     background-attachment: fixed;
@@ -829,7 +829,7 @@ body{
     .BG_img{
         width: 100%;
         height: 300px;
-        background-image: url("/04-img/IMG_7783.jpg");
+        background-image: url("../04-img/IMG_7783.jpg");
         background-size: cover;
         background-position: -280px 0px;
         background-attachment: none;
@@ -965,7 +965,7 @@ a:hover {
 .SmallImg{
     width: 20%;
     height: 200px;
-    background-image: url("/04-img/02.jpg");
+    background-image: url("../04-img/2.jpg");
     float: left;
     margin-top: 50px;
 }
@@ -1108,7 +1108,7 @@ a:hover {
     }
     #footer .down{
         line-height: 0px;
-        margin-top: 230px;
+        margin-top: 220px;
     }
     #footer .connection{
         margin-left: 0px;

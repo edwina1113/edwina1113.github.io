@@ -67,6 +67,12 @@ body{
     background-position: 50 -150;
     /* transform: scale(1.4); */
 }
+
+#banner .webkeyword{
+    position: absolute;
+    z-index:-1;
+}
+
 @media(max-width:480px){
     #banner{
         height: 30vh;
@@ -86,6 +92,9 @@ body{
     z-index: 12;
     box-shadow:0 7px 7px -5px #40311b6e;
 }
+#navsticky h2{
+    font-size: 26px;
+}
 #navsticky_Phone{
     display: none;
 }
@@ -101,7 +110,7 @@ body{
 }
 .logo{
     float: left;
-    margin: 35px 46px;
+    margin: 30px 46px;
 }
 @media(max-width:480px){
     #navsticky {
@@ -544,6 +553,14 @@ body{
     margin-bottom: 80px;
     clear: left;
 }
+
+#block03 h2{
+    font-size: 24px;
+}
+
+#block03 h3{
+    font-size: 20px;
+}
     
 .icon_title01{
     clear: left;
@@ -716,7 +733,14 @@ body{
 }
 
 .video{
-    margin-left: calc(50% - 360px);
+    /* margin-left: calc(50% - 360px); */
+    float: left;
+    margin-left: 38px; 
+}
+.video2{
+    /* margin-left: calc(50% - 360px); */
+    float: left; 
+    margin-left: 30px;
 }
 
 
@@ -915,6 +939,11 @@ body{
 .tab-pane {
     clear: left;
     margin-left: 60px;
+}
+
+#block03 .tab-pane {
+    clear: left;
+    margin-left: 0px;
 }
 
 a {

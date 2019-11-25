@@ -41,7 +41,7 @@ body{
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    /* background: #fff; */
     /* Center slide text vertically */
     color: #8e7f37;
     display: -webkit-box;
@@ -689,7 +689,7 @@ body{
 @media(max-width:480px){
 
     #block03{
-        height: 700px;
+        height: 800px;
         margin-top: 30px;
     }
     #block03 .titleLeft_phone{
@@ -730,6 +730,7 @@ body{
     text-align: center;
     font-size: 32pt;
     padding-top: 20px;
+    margin-bottom: 20px;
 }
 
 .video{
@@ -744,11 +745,12 @@ body{
 }
 
 
+
 @media(max-width:480px){
     #block04{
-        height: 200px;
+        height: 550px;
         background-color: #fff;
-        margin-top: 120px;
+        margin-top: 90px;
     }
     iframe{
         width: 300px;
@@ -760,6 +762,62 @@ body{
     .video{
         margin-left: calc(50% - 150px);
     }
+    .video2{
+        margin-left: calc(50% - 150px);
+    }
+}
+/* block010 --------------------------*/
+#block10{
+    width: 100%;
+    height: 550px;
+    background-color: #f3dabb7a;
+}
+#block10 .title{
+    text-align: center;
+    font-size: 32pt;
+    padding-top: 20px;
+}
+
+ .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+}
+/*
+.swiper-pagination{
+    margin-top: 20px;
+} */
+
+#block10 img{
+    padding: 30px;
+    width: 300px;
+    height: 400px;
+}
+
+/* #block10 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0px 4px;
+}
+
+#block10 .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+}
+#block10  .swiper-slide  > .swiper-slide-active{
+    width: 400px;
+    margin-right: 10px;
+} */
+
+@media(max-width:480px){
+    #block10{
+        height: 380px;
+        background-color: #fff;
+    }
+   
+    #block10 .title{
+        font-size: 21pt;
+    }
+
 
 }
 
@@ -814,7 +872,7 @@ body{
 
 @media(max-width:480px){
     #block05{
-       
+       height: 550px;
     }
     #block05 .titleLeft{
         display: none;
@@ -860,7 +918,7 @@ body{
     }
 }
 /* block07--------------------- */
-#block{
+#block07{
     height: 100vh;   
     width: 100%;
 }
@@ -1008,6 +1066,10 @@ a:hover {
 }
 
 @media(max-width:480px){
+    #block07{
+        height: 1100px;   
+        width: 100%;
+    }
     #block07 .titleLeft{
         display: none;
     }

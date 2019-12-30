@@ -52,6 +52,7 @@ gdjs.GameOverCode.GDHIGHSCOREObjects1.createFrom(runtimeScene.getObjects("HIGHSC
 }{for(var i = 0, len = gdjs.GameOverCode.GDHIGHSCOREObjects1.length ;i < len;++i) {
     gdjs.GameOverCode.GDHIGHSCOREObjects1[i].setString(gdjs.evtTools.common.toString(gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1))));
 }
+}{gdjs.evtTools.network.sendHttpRequest("https://edwina1113.github.io/Node/game/index.html", "/save", "{\"name\":\"abc\",\"score\":" + gdjs.evtTools.common.getVariableString(runtimeScene.getVariables().get("Score")) + "}", "POST", "application/json", runtimeScene.getVariables().get("Result"));
 }}
 
 }
